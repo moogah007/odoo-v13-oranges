@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_kschl" model="ir.actions.act_window">
+        <field name="name">Discount</field>
+        <field name="res_model">kschl</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Discount</p>
+        </field>
+    </record>
+
+    <record id="kschl_view_form" model="ir.ui.view">
+        <field name="name">kschl.view.form</field>
+        <field name="model">kschl</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="discount"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="kschl_view_tree" model="ir.ui.view">
+        <field name="name">kschl.view.tree</field>
+        <field name="model">kschl</field>
+        <field name="arch" type="xml">
+            <tree string="Reject Reason">
+                <field name="name"/>
+                <field name="discount"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

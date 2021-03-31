@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="total" inherit_id="website_sale.total">
+        <xpath expr="//tr[@id='order_total']" operation="after">
+            <tr>
+                <td colspan="2" class="text-right"><span class="btn btn-beta text-right btn-get-price" t-att-data-so_id="website_sale_order and website_sale_order.id or 0">Simulation</span></td>
+            </tr>
+        </xpath>
+    </template>
+
+    <template id="assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/ld_sap_integration/static/src/js/website_sale_extended.js"></script>
+        </xpath>
+    </template>
+</odoo>

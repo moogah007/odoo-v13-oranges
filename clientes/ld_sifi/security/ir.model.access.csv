@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ledesma_sap_ship,access_ledesma_sap_ship,model_ledesma_sap_ship,base.group_user,1,1,1,1
+access_ledesma_sap_port,access_ledesma_sap_port,model_ledesma_sap_port,base.group_user,1,1,1,1
+access_ledesma_sap_pos_aran,access_ledesma_sap_pos_aran,model_ledesma_sap_pos_aran,base.group_user,1,1,1,1
+access_ledesma_sap_shipping,access_ledesma_sap_shipping,model_ledesma_sap_shipping,base.group_user,1,1,1,1
+access_ledesma_sap_ship_price,access_ledesma_sap_ship_price,model_ledesma_sap_ship_price,base.group_user,1,1,1,1
+access_ledesma_sap_calibre,access_ledesma_sap_calibre,model_ledesma_sap_calibre,base.group_user,1,1,1,1
+access_ledesma_texts,access_ledesma_texts,model_ledesma_texts,base.group_user,1,1,1,1
+access_ledesma_sap_categ,access_ledesma_sap_categ,model_ledesma_sap_categ,base.group_user,1,1,1,1
+access_ledesma_sap_countermark,access_ledesma_sap_countermark,model_ledesma_sap_countermark,base.group_user,1,1,1,1
+access_ledesma_sap_assurance,access_ledesma_sap_assurance,model_ledesma_sap_assurance,base.group_user,1,1,1,1
+access_ledesma_sap_ship_price_line,access_ledesma_sap_ship_price_line,model_ledesma_sap_ship_price_line,base.group_user,1,1,1,1
+access_ledesma_sap_envelope,access_ledesma_sap_envelope,model_ledesma_sap_envelope,base.group_user,1,1,1,1

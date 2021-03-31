@@ -1,0 +1,541 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ld_sifi
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-25 20:02+0000\n"
+"PO-Revision-Date: 2021-03-25 17:20-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CL\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_pos_aran__refund
+msgid "% Reembolso"
+msgstr "% Reembolso"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_pos_aran__retention
+msgid "% Retencion"
+msgstr "% Retención"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__active
+msgid "Activo"
+msgstr "Activo"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_sap_ship
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_ship
+msgid "Barcos"
+msgstr "Barcos"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_calibre_from_id
+msgid "Calibre Desde"
+msgstr "Calibre Desde"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_calibre_to_id
+msgid "Calibre Hasta"
+msgstr "Calibre Hasta"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__calibre_ue
+msgid "Calibre UE"
+msgstr "Calibre UE"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_sap_calibre
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_calibre
+msgid "Calibres"
+msgstr "Calibres"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__qty
+msgid "Cantidad"
+msgstr "Cantidad"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_shipping__pallets_capacity
+msgid "Capacidad de Pallets"
+msgstr "Capacidad de Pallets"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_categ__name
+msgid "Categoria"
+msgstr "Categoría"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_sap_categ
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_categ
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_countermark
+msgid "Categorias"
+msgstr "Categorías"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__sap_center
+msgid "Centro Sap"
+msgstr "Centro SAP"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_class
+msgid "Class"
+msgstr "Clase"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_customers
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_customers_sub
+msgid "Clientes"
+msgstr "Clientes"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_categ__code
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_pos_aran__name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_shipping__name
+msgid "Code"
+msgstr "Código"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_paym_term
+msgid "Condiciones de Pago"
+msgstr "Cond. de Pago"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_config
+msgid "Configuracion"
+msgstr "Configuración"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_sap_countermark
+msgid "Contramarca"
+msgstr "Contramarca"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_contratos
+msgid "Contratos"
+msgstr "Contratos"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__shipping_cost
+msgid "Costo Flete"
+msgstr "Costo Flete"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__create_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_categ__create_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__create_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__create_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_pos_aran__create_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship__create_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__create_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_shipping__create_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_texts__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__create_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_categ__create_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__create_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__create_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_pos_aran__create_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship__create_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__create_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_shipping__create_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_texts__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_partner_id
+msgid "Customer Code"
+msgstr "Cód. Cliente"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_partner_name
+msgid "Customer Name"
+msgstr "Nombre Cliente"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__desc
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__desc
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship__desc
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__desc
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_shipping__desc
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_texts__desc
+msgid "Descripcion"
+msgstr "Descripción"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__destination
+msgid "Destino"
+msgstr "Destino"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__diameter_ledesma
+msgid "Diametros Ledesma"
+msgstr "Diámetros Ledesma"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__diameter_ue
+msgid "Diametros UE"
+msgstr "Diámetros UE"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__display_name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_categ__display_name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__display_name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__display_name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_pos_aran__display_name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship__display_name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__display_name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_shipping__display_name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_texts__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_legal
+msgid "Documentos Fiscales"
+msgstr "Documentos Fiscales"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_entregas
+msgid "Entregas"
+msgstr "Packing List"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__categ1_id
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_prod_type_id
+msgid "Especie"
+msgstr "Especie"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_inv_valid
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_inv_valid
+msgid "Facturas"
+msgstr "Facturas"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_inv_draft
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_inv_draft
+msgid "Facturas Pro Forma"
+msgstr "Facturas Pro-Forma"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__id
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_categ__id
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__id
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__id
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_pos_aran__id
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship__id
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__id
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_shipping__id
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_texts__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_label_categ_id
+msgid "Label Category"
+msgstr "Etiqueta Categoría"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre____last_update
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_categ____last_update
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark____last_update
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port____last_update
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_pos_aran____last_update
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship____last_update
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price____last_update
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_shipping____last_update
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_texts____last_update
+msgid "Last Modified on"
+msgstr "Ult. Modificación en"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__write_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_categ__write_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__write_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__write_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_pos_aran__write_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship__write_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__write_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_shipping__write_uid
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_texts__write_uid
+msgid "Last Updated by"
+msgstr "Ult. Actualización por"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__write_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_categ__write_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__write_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__write_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_pos_aran__write_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship__write_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__write_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_shipping__write_date
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_texts__write_date
+msgid "Last Updated on"
+msgstr "Ult. Actualización en"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_lotess
+msgid "Lotes"
+msgstr "Lotes"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_maestros
+msgid "Maestros"
+msgstr "Maestros"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_prod_mark_id
+msgid "Marca"
+msgstr "Marca"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_product_id
+msgid "Material"
+msgstr "Material"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_currency
+msgid "Monedas"
+msgstr "Monedas"
+
+#. module: ld_sifi
+#: model:ir.model.fields.selection,name:ld_sifi.selection__ledesma_sap_port__destination__no
+#: model:ir.model.fields.selection,name:ld_sifi.selection__ledesma_sap_port__origin__no
+msgid "NO"
+msgstr "NO"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__partner_id
+msgid "Naviera"
+msgstr "Naviera"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship__name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__name
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_texts__name
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_inv_nc
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_inv_nc
+msgid "Notas de Credito"
+msgstr "Nota de Crédito"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_remitos_internal
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_remitos2
+msgid "Packing List"
+msgstr "Packing List"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__country_id
+msgid "Pais"
+msgstr "País"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_states
+msgid "Paises"
+msgstr "Países"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_pallets
+msgid "Pallets"
+msgstr "Pallets"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_pedi_nt
+msgid "Pedidos Internos"
+msgstr "Pedidos Internos"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_sale
+msgid "Pedidos de Venta"
+msgstr "Instrucción de Embarque"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_sap_pos_aran
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_pos_ata
+msgid "Posición Arancerlaria"
+msgstr "Posición Arancelaria"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_pos
+msgid "Position"
+msgstr "Posición"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_sap_mat_sub
+msgid "Productos"
+msgstr "Productos"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_vendors
+msgid "Proveedores"
+msgstr "Proveedores"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_provincia
+msgid "Provincias"
+msgstr "Provincias"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__port_in_id
+msgid "Puerto Destino"
+msgstr "Puerto Destino"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__port_out_id
+msgid "Puerto Salida"
+msgstr "Puerto Salida"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_sap_port
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_port
+msgid "Puertos"
+msgstr "Puertos"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_real_categ_id
+msgid "Real Category"
+msgstr "Categoría Real"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_remitos
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_remitos
+msgid "Remitos"
+msgstr "Packing List"
+
+#. module: ld_sifi
+#: model:ir.model.fields.selection,name:ld_sifi.selection__ledesma_sap_port__destination__si
+#: model:ir.model.fields.selection,name:ld_sifi.selection__ledesma_sap_port__origin__si
+msgid "SI"
+msgstr "SI"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_root
+msgid "SIFI"
+msgstr "SIFI"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_port__origin
+msgid "Salida"
+msgstr "Salida"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_sap_ship_price
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_ship_price
+msgid "Tarifario Navieras"
+msgstr "Tarifario Navieras"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_sap_texts
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_texts
+msgid "Textos"
+msgstr "Textos"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__categ3_id
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_prod_env_type_id
+msgid "Tipo de Envase"
+msgstr "Tipo de Envase"
+
+#. module: ld_sifi
+#: model:ir.actions.act_window,name:ld_sifi.action_sap_shipping
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_shipping
+msgid "Tipos de Flete"
+msgstr "Tipos de Flete"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_transacciones
+msgid "Transacciones"
+msgstr "Transacciones"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_ship_price__transport_id
+msgid "Transporte"
+msgstr "Transporte"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_uom
+msgid "Unidad de Medida"
+msgstr "Unidad de Medida"
+
+#. module: ld_sifi
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_calibre__categ2_id
+#: model:ir.model.fields,field_description:ld_sifi.field_ledesma_sap_countermark__cm_prod_variety_id
+msgid "Variedad"
+msgstr "Tipo de Envase"
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_sap_var
+msgid "Variedades"
+msgstr "Tipos de Envases"
+
+#. module: ld_sifi
+#: model:ir.model,name:ld_sifi.model_ledesma_sap_calibre
+msgid "ledesma.sap.calibre"
+msgstr ""
+
+#. module: ld_sifi
+#: model:ir.model,name:ld_sifi.model_ledesma_sap_categ
+msgid "ledesma.sap.categ"
+msgstr ""
+
+#. module: ld_sifi
+#: model:ir.model,name:ld_sifi.model_ledesma_sap_countermark
+msgid "ledesma.sap.countermark"
+msgstr ""
+
+#. module: ld_sifi
+#: model:ir.model,name:ld_sifi.model_ledesma_sap_port
+msgid "ledesma.sap.port"
+msgstr ""
+
+#. module: ld_sifi
+#: model:ir.model,name:ld_sifi.model_ledesma_sap_pos_aran
+msgid "ledesma.sap.pos.aran"
+msgstr ""
+
+#. module: ld_sifi
+#: model:ir.model,name:ld_sifi.model_ledesma_sap_ship
+msgid "ledesma.sap.ship"
+msgstr ""
+
+#. module: ld_sifi
+#: model:ir.model,name:ld_sifi.model_ledesma_sap_ship_price
+msgid "ledesma.sap.ship.price"
+msgstr ""
+
+#. module: ld_sifi
+#: model:ir.model,name:ld_sifi.model_ledesma_sap_shipping
+msgid "ledesma.sap.shipping"
+msgstr ""
+
+#. module: ld_sifi
+#: model:ir.model,name:ld_sifi.model_ledesma_texts
+msgid "ledesma.texts"
+msgstr ""
+
+#. module: ld_sifi
+#: model:ir.ui.menu,name:ld_sifi.menu_mufi_sap_mat
+msgid "materiales SAP"
+msgstr "Materiales SAP"

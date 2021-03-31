@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<odoo>
+	<data>
+
+		<record id="view_public_product_form" model="ir.ui.view">
+			<field name="name">public.product.form.view</field>
+			<field name="model">public.product</field>
+			<field name="arch" type="xml">
+				<form edit="true" create="false" delete="false" string="Public Products">
+					<sheet>
+						<group colspan="4" col="4">
+							<group colspan="2" col="2" string="Visible Products">
+								<button type="object" class="btn btn-primary" name="add_all_product" icon="fa-plus-circle" string="Add All Products" colspan="1"/>
+								<field name="public_visible_product_ids" domain="[('website_published', '=', True)]" nolabel="1" colspan="2">
+									<tree>
+										<field name="name"/>
+										<field name="default_code"/>
+										<field name="categ_id"/>
+										<field name="qty_available"/>
+										<field name="virtual_available"/>
+									</tree>
+								</field>
+							</group>
+							<group colspan="2" col="2" string="Visible Category">
+								<button type="object" class="btn btn-primary" name="add_all_category" string="Add All Categories" icon="fa-plus-circle" colspan="1"/>
+								<field name="public_visible_category_ids" colspan="2" nolabel="1"/>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_public_product_tree" model="ir.ui.view">
+			<field name="name">public.product.list.view</field>
+			<field name="model">public.product</field>
+			<field name="arch" type="xml">
+				<tree string="Public Products">
+					<field name="public_visible_product_ids"/>
+					<field name="public_visible_category_ids"/>
+				</tree>
+			</field>
+		</record>
+
+		<record id="action_public_product" model="ir.actions.act_window">
+			<field name="name">Public Products</field>
+			<field name="res_model">public.product</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem id="menu_public_product" name="Public Products" parent="website_sale.menu_catalog" 
+		sequence="20" action="action_public_product" groups="base.group_system"/>
+
+	</data>
+</odoo>

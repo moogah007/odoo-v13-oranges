@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_sales_area" model="ir.actions.act_window">
+        <field name="name">Sales Area</field>
+        <field name="res_model">sap.knvv</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Sales Area</p>
+        </field>
+    </record>
+
+    <record id="sap_knvv_view_form" model="ir.ui.view">
+        <field name="name">sap.knvv.view.form</field>
+        <field name="model">sap.knvv</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="KUNNR"/>
+                            <field name="VKORG"/>
+                            <field name="VTWEG"/>
+                            <field name="SPART"/>
+                            <field name="WAERS"/>
+                            <field name="ZTERM"/>
+                            <field name="KURST"/>
+                            <field name="process_date"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="inter_functions" string="Interlocutor Functions">
+                            <field name="sap_knvp_ids">
+                                <tree>
+                                    <field name="KUNNR"/>
+                                    <field name="VKORG"/>
+                                    <field name="VTWEG"/>
+                                    <field name="SPART"/>
+                                    <field name="PARVW"/>
+                                    <field name="KUNN2"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_knvv_view_tree" model="ir.ui.view">
+        <field name="name">sap.knvv.view.tree</field>
+        <field name="model">sap.knvv</field>
+        <field name="arch" type="xml">
+            <tree string="Sales Area">
+                <field name="KUNNR"/>
+                <field name="VKORG"/>
+                <field name="VTWEG"/>
+                <field name="SPART"/>
+                <field name="WAERS"/>
+                <field name="ZTERM"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_sinc_errors" model="ir.actions.act_window">
+        <field name="name">Sap Sinc Errors</field>
+        <field name="res_model">sap.sinc.errors</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Sync Erorrs</p>
+        </field>
+    </record>
+
+    <record id="sap_sinc_errors_view_form" model="ir.ui.view">
+        <field name="name">sap.sinc.errors.view.form</field>
+        <field name="model">sap.sinc.errors</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="model_name"/>
+                            <field name="id_model"/>
+                            <field name="error_str"/>
+                            <field name="date_mark"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_sinc_errors_view_tree" model="ir.ui.view">
+        <field name="name">sap.sinc.errors.view.tree</field>
+        <field name="model">sap.sinc.errors</field>
+        <field name="arch" type="xml">
+            <tree string="Sinc Errors">
+                <field name="model_name"/>
+                <field name="id_model"/>
+                <field name="error_str"/>
+                <field name="date_mark"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

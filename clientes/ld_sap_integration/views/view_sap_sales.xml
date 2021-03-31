@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_sales" model="ir.actions.act_window">
+        <field name="name">SAP Sales</field>
+        <field name="res_model">sap.sales</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Sales</p>
+        </field>
+    </record>
+
+    <record id="sap_sales_view_form" model="ir.ui.view">
+        <field name="name">sap.sales.view.form</field>
+        <field name="model">sap.sales</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="VBAK_AUART"/>
+                            <field name="VBAK_VBELN"/>
+                            <field name="VBAK_ZTERM"/>
+                            <field name="VBUK_CMPSF"/>
+                            <field name="VBUK_CMPSG"/>
+                            <field name="VBAK_UPDKZ"/>
+                            <field name="RETURN"/>
+                            <field name="BLOCKED"/>
+                            <field name="VBKD_BSTKD_OC"/>
+                        </group>
+                        <group>
+                            <field name="VBAK_ANGDT"/>
+                            <field name="VBAK_BNDDT"/>
+                            <field name="VBAK_VKORG"/>
+                            <field name="VBAK_VTWEG"/>
+                            <field name="VBAK_SPART"/>
+                            <field name="VBUK_CMPSB"/>
+                            <field name="VBUK_CMGST"/>
+                            <field name="JEST_STAT"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="interlocutor" string="Interlocutor">
+                            <field name="sap_sales_interlocutor_ids">
+                                <tree>
+                                    <field name="VBPA_PARVW"/>
+                                    <field name="VBPA_KUNNR"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="position" string="Position">
+                            <field name="sap_sales_position_ids">
+                                <tree>
+                                    <field name="VBAP_POSNR"/>
+                                    <field name="VBAP_MATNR"/>
+                                    <field name="KONV_KBETR"/>
+                                    <field name="KONV_WAERS"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_sales_view_tree" model="ir.ui.view">
+        <field name="name">sap.sales.view.tree</field>
+        <field name="model">sap.sales</field>
+        <field name="arch" type="xml">
+            <tree string="SAP Sales">
+                <field name="VBAK_AUART"/>
+                <field name="VBAK_VBELN"/>
+                <field name="VBAK_ZTERM"/>
+                <field name="VBUK_CMPSF"/>
+                <field name="RETURN"/>
+                <field name="BLOCKED"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

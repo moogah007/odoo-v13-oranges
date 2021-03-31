@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2020 Ketan Kachhela <l.kachhela28@gmail.com>
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
+-->
+<odoo>
+    <template id="always_show_address_option" name="Always Show Address Page" inherit_id="website_sale.wizard_checkout" active="False" customize_show="True">
+    </template>
+
+    <template inherit_id="website_sale.products_add_to_cart" id="products_add_to_cart" customize_show="True" name="Add to Cart">
+        <xpath expr="//a[hasclass('a-submit')]" position="attributes">
+            <attribute name="class">btn btn-secondary add_to_cart_custom</attribute>
+        </xpath>
+    </template>
+</odoo>

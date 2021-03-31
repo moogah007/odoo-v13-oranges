@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_remitos" model="ir.actions.act_window">
+        <field name="name">Remitos</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">stock.picking</field>
+        <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
+        <field name="context">{}</field>
+        <field name="domain">[
+            ('picking_type_id.code', '=', 'outgoing'),
+            ]</field>
+    </record>
+
+    <record id="action_remitos_internal" model="ir.actions.act_window">
+        <field name="name">Packing List</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">stock.picking</field>
+        <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
+        <field name="context">{}</field>
+        <field name="domain">[
+            ('picking_type_id.code', '=', 'internal'),
+            ]</field>
+    </record>
+
+    <record id="action_inv_draft" model="ir.actions.act_window">
+        <field name="name">Facturas Pro Forma</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">account.move</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[
+            ('type', '=', 'out_invoice'),
+            ('state', '=', 'draft'),
+            ]</field>
+    </record>
+
+    <record id="action_inv_valid" model="ir.actions.act_window">
+        <field name="name">Facturas</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">account.move</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[
+            ('type', '=', 'out_invoice'),
+            ('state', '=', 'posted'),
+            ]</field>
+    </record>
+
+    <record id="action_inv_nc" model="ir.actions.act_window">
+        <field name="name">Notas de Credito</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">account.move</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[
+            ('type', '=', 'out_refund'),
+            ('state', 'in', ('posted','draft')),
+            ]</field>
+    </record>
+
+    <record id="action_sap_ship" model="ir.actions.act_window">
+        <field name="name">Barcos</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ledesma.sap.ship</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <record id="action_sap_port" model="ir.actions.act_window">
+        <field name="name">Puertos</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ledesma.sap.port</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <record id="action_sap_pos_aran" model="ir.actions.act_window">
+        <field name="name">Posición Arancerlaria</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ledesma.sap.pos.aran</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <record id="action_sap_shipping" model="ir.actions.act_window">
+        <field name="name">Tipos de Flete</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ledesma.sap.shipping</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <record id="action_sap_ship_price" model="ir.actions.act_window">
+        <field name="name">Tarifario Navieras</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ledesma.sap.ship.price</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <record id="action_sap_calibre" model="ir.actions.act_window">
+        <field name="name">Calibres</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ledesma.sap.calibre</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <record id="action_sap_texts" model="ir.actions.act_window">
+        <field name="name">Textos</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ledesma.texts</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <record id="action_sap_categ" model="ir.actions.act_window">
+        <field name="name">Categorias</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ledesma.sap.categ</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <record id="action_sap_countermark" model="ir.actions.act_window">
+        <field name="name">Contramarca</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ledesma.sap.countermark</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <record id="action_sap_assurance" model="ir.actions.act_window">
+        <field name="name">Seguros</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ledesma.sap.assurance</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <record id="action_cap_type" model="ir.actions.act_window">
+        <field name="name">Tipo de Envase</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ledesma.sap.envelope</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[]</field>
+    </record>
+
+        <record model="ir.ui.view" id="ship_prices_view_form">
+            <field name="name">ship.prices.view.form</field>
+            <field name="model">ledesma.sap.ship.price</field>
+            <field name="arch" type="xml">
+                <form string="Precios Naviera">
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="partner_id"/>
+                            <field name="port_out_id"/>
+                        </group>
+                        <group>
+                            <field name="port_in_id"/>
+                            <field name="transport_id"/>
+                            <field name="shipping_cost"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="lines" string="Lines">
+                            <field name="line_ids">
+                                <tree editable="bottom">
+                                    <field name="product_id" colspan="4"/>
+                                    <field name="amount_price" />
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+
+
+    <menuitem name="SIFI" id="menu_mufi_root" sequence="30"
+              web_icon="ld_sifi,static/description/icon.png"/>
+
+    <menuitem id="menu_mufi_transacciones"
+              name="Transacciones"
+              parent="menu_mufi_root"
+              sequence="2"/>
+
+    <menuitem id="menu_mufi_contratos"
+              name="Contratos"
+              parent="menu_mufi_transacciones"
+              sequence="1" action="sales_blanket_order.action_window_blanket_order"/>
+
+    <menuitem id="menu_mufi_sale"
+              name="Pedidos de Venta"
+              parent="menu_mufi_transacciones"
+              sequence="2" action="sale.action_orders"/>
+
+    <menuitem id="menu_mufi_entregas"
+              name="Entregas"
+              parent="menu_mufi_transacciones"
+              sequence="3"/>
+
+    <menuitem id="menu_mufi_pedi_nt"
+              name="Pedidos Internos"
+              parent="menu_mufi_entregas"
+              sequence="1" action="stock.action_picking_tree_all"/>
+
+    <menuitem id="menu_mufi_remitos"
+              name="Remitos"
+              parent="menu_mufi_entregas"
+              sequence="2" action="action_remitos"/>
+
+    <menuitem id="menu_mufi_remitos2"
+              name="Packing List"
+              parent="menu_mufi_entregas"
+              sequence="3" action="action_remitos_internal"/>
+
+    <menuitem id="menu_mufi_legal"
+              name="Documentos Fiscales"
+              parent="menu_mufi_transacciones"
+              sequence="4"/>
+
+    <menuitem id="menu_mufi_inv_draft"
+              name="Facturas Pro Forma"
+              parent="menu_mufi_legal"
+              sequence="1" action="action_inv_draft"/>
+
+    <menuitem id="menu_mufi_inv_valid"
+              name="Facturas"
+              parent="menu_mufi_legal"
+              sequence="1" action="action_inv_valid"/>
+
+    <menuitem id="menu_mufi_inv_nc"
+              name="Notas de Credito"
+              parent="menu_mufi_legal"
+              sequence="1" action="action_inv_nc"/>
+
+    <menuitem id="menu_mufi_maestros"
+              name="Maestros"
+              parent="menu_mufi_root"
+              sequence="3"/>
+
+    <menuitem id="menu_mufi_customers_sub"
+              name="Clientes"
+              parent="menu_mufi_maestros"
+              sequence="1" action="base.action_partner_form"/>
+
+    <menuitem id="menu_mufi_customers"
+              name="Clientes"
+              parent="menu_mufi_customers_sub"
+              sequence="1" action="base.action_partner_form"/>
+
+    <menuitem id="menu_mufi_paym_term"
+              name="Condiciones de Pago"
+              parent="menu_mufi_customers_sub"
+              sequence="2" action="account.action_payment_term_form"/>
+
+    <menuitem id="menu_mufi_vendors"
+              name="Proveedores"
+              parent="menu_mufi_maestros"
+              sequence="3" action="account.res_partner_action_supplier"/>
+
+    <menuitem id="menu_mufi_sap_mat_sub"
+              name="Productos"
+              parent="menu_mufi_maestros"
+              sequence="4" action="mrp.product_template_action"/>
+
+    <menuitem id="menu_mufi_sap_mat"
+              name="materiales SAP"
+              parent="menu_mufi_sap_mat_sub"
+              sequence="4" action="mrp.product_template_action"/>
+
+    <menuitem id="menu_mufi_sap_var"
+              name="Variedades"
+              parent="menu_mufi_sap_mat_sub"
+              sequence="5" action="mrp.mrp_product_variant_action"/>
+
+    <menuitem id="menu_mufi_pallets"
+              name="Pallets"
+              parent="menu_mufi_maestros"
+              sequence="6" action="stock.action_production_lot_form"/>
+
+    <menuitem id="menu_mufi_lotess"
+              name="Lotes"
+              parent="menu_mufi_maestros"
+              sequence="7" action="stock.action_production_lot_form"/>
+
+
+
+
+    <menuitem id="menu_mufi_config"
+              name="Configuracion"
+              parent="menu_mufi_root"
+              sequence="3"/>
+
+    <menuitem id="menu_mufi_uom"
+              name="Unidad de Medida"
+              parent="menu_mufi_config"
+              sequence="8" action="uom.product_uom_form_action"/>
+
+    <menuitem id="menu_mufi_provincia"
+              name="Provincias"
+              parent="menu_mufi_config"
+              sequence="9" action="base.action_country_state"/>
+
+    <menuitem id="menu_mufi_states"
+              name="Paises"
+              parent="menu_mufi_config"
+              sequence="10" action="base.action_country"/>
+
+    <menuitem id="menu_mufi_currency"
+              name="Monedas"
+              parent="menu_mufi_config"
+              sequence="11" action="ld_sap_integration.action_sap_waers"/>
+
+    <menuitem id="menu_mufi_ship"
+              name="Barcos"
+              parent="menu_mufi_config"
+              sequence="12" action="action_sap_ship"/>
+
+    <menuitem id="menu_mufi_port"
+              name="Puertos"
+              parent="menu_mufi_config"
+              sequence="13" action="action_sap_port"/>
+
+    <menuitem id="menu_mufi_pos_ata"
+              name="Posición Arancerlaria"
+              parent="menu_mufi_config"
+              sequence="14" action="action_sap_pos_aran"/>
+
+    <menuitem id="menu_mufi_shipping"
+              name="Tipos de Flete"
+              parent="menu_mufi_config"
+              sequence="15" action="action_sap_shipping"/>
+
+    <menuitem id="menu_mufi_ship_price"
+              name="Tarifario Navieras"
+              parent="menu_mufi_config"
+              sequence="16" action="action_sap_ship_price"/>
+
+    <menuitem id="menu_mufi_calibre"
+              name="Calibres"
+              parent="menu_mufi_config"
+              sequence="17" action="action_sap_calibre"/>
+
+    <menuitem id="menu_mufi_texts"
+          name="Textos"
+          parent="menu_mufi_config"
+          sequence="18" action="action_sap_texts"/>
+
+    <menuitem id="menu_mufi_categ"
+          name="Categorias"
+          parent="menu_mufi_config"
+          sequence="19" action="action_sap_categ"/>
+
+    <menuitem id="menu_mufi_countermark"
+          name="Contramarca"
+          parent="menu_mufi_config"
+          sequence="20" action="action_sap_countermark"/>
+
+    <menuitem id="menu_mufi_assurance"
+          name="Seguros"
+          parent="menu_mufi_config"
+          sequence="21" action="action_sap_assurance"/>
+
+    <menuitem id="menu_mufi_incoterms"
+          name="Cond de Venta"
+          parent="menu_mufi_config"
+          sequence="21" action="account.action_incoterms_tree"/>
+
+    <menuitem id="menu_mufi_cur_rates"
+          name="Cotizaciones"
+          parent="menu_mufi_config"
+          sequence="21" action="base.action_currency_form"/>
+
+    <menuitem id="menu_mufi_pallet_capacity"
+          name="Tipo Envase"
+          parent="menu_mufi_config"
+          sequence="21" action="action_cap_type"/>
+</odoo>

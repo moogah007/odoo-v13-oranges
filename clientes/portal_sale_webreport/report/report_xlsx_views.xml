@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <report
+        id="sale_order_report_xlsx"
+        model="sale.order"
+        string="Order Report"
+        report_type="xlsx"
+        name="portal_sale_webreport.sale_order_report_xlsx"
+        file="Order Report"
+        attachment_use="False"
+    />
+    <report
+        id="sale_order_linked_report_xlsx"
+        model="sale.order"
+        string="Linked Report"
+        report_type="xlsx"
+        name="portal_sale_webreport.sale_order_linked_report_xlsx"
+        file="Linked Report"
+        attachment_use="False"
+    />
+    <report
+        id="sale_blanket_order_report_xlsx"
+        model="sale.blanket.order"
+        string="Sale Order Report XLSX"
+        report_type="xlsx"
+        name="portal_sale_webreport.sale_blanket_order_report_xlsx"
+        file="Contract Report"
+        attachment_use="False"
+    />
+    <report
+        id="sale_blnkt_order_lnkd_rprt_xlsx"
+        model="sale.blanket.order"
+        string="Sale Blanket Order Linked Report XLSX"
+        report_type="xlsx"
+        name="portal_sale_webreport.sale_blnkt_order_lnkd_rprt_xlsx"
+        file="Linked Contracts"
+        attachment_use="False"
+    />
+</odoo>

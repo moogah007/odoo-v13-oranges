@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_sales_interlocutor" model="ir.actions.act_window">
+        <field name="name">SAP Sales Interlocutor</field>
+        <field name="res_model">sap.sales.interlocutor</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Sales Interlocutor</p>
+        </field>
+    </record>
+
+    <record id="sap_sales_interlocutor_view_form" model="ir.ui.view">
+        <field name="name">sap.sales.interlocutor.view.form</field>
+        <field name="model">sap.sales.interlocutor</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="VBPA_PARVW"/>
+                            <field name="VBPA_KUNNR"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_sales_interlocutor_view_tree" model="ir.ui.view">
+        <field name="name">sap.sales.interlocutor.view.tree</field>
+        <field name="model">sap.sales.interlocutor</field>
+        <field name="arch" type="xml">
+            <tree string="Customers">
+                <field name="VBPA_PARVW"/>
+                <field name="VBPA_KUNNR"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

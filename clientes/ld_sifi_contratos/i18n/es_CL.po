@@ -1,0 +1,369 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ld_sifi_contratos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-25 20:21+0000\n"
+"PO-Revision-Date: 2021-03-25 17:25-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CL\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__quality_perc
+msgid "% Quality"
+msgstr "% Calidad"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order_line__fruit_type__rented
+msgid "Arriendo"
+msgstr "Arriendo"
+
+#. module: ld_sifi_contratos
+#: model:ir.model,name:ld_sifi_contratos.model_sale_blanket_order_line
+msgid "Blanket Order Line"
+msgstr "Detalle de Contrato"
+
+#. module: ld_sifi_contratos
+#: model:ir.actions.act_window,name:ld_sifi_contratos.action_window_blanket_order_sifi
+msgid "Blanket Orders"
+msgstr "Contratos"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_res_partner__sale_bonus_cond_id
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_res_users__sale_bonus_cond_id
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__sale_bonus_cond_id
+msgid "Bonus Sale Cond"
+msgstr "Cond. Comisión Venta"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__calibre_from
+msgid "Calibre Desde"
+msgstr "Calibre Desde"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__calibre_to
+msgid "Calibre Hasta"
+msgstr "Calibre Hasta"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__year_only
+msgid "Campania"
+msgstr "Compañía"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.blanket_order_form2
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order_line__quality__comercial
+msgid "Comercial"
+msgstr "Comercial"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_res_partner__bonus
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_res_users__bonus
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__bonus
+msgid "Comision"
+msgstr "Comisión"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_res_partner__payment_cond_id
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_res_users__payment_cond_id
+msgid "Condicion de Pago"
+msgstr "Condición de Pago"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.blanket_order_form2
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: ld_sifi_contratos
+#: model:ir.model,name:ld_sifi_contratos.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__countermark_id
+msgid "Contramarca"
+msgstr "Contramarca"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_res_partner__cm_code
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_res_users__cm_code
+msgid "Countermark Code"
+msgstr "Cód. Contramarca"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.blanket_order_form2
+msgid "Create Sale Order"
+msgstr "Crear Instrucción de Embarque"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.blanket_order_form2
+msgid "Disc.%"
+msgstr "Desc.%"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__etd
+msgid "ETD"
+msgstr "ETD"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order_line__quality__chosen
+msgid "Eeegido"
+msgstr "Elegido"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order__contract_type__consig
+msgid "En Consignacion"
+msgstr "En Consignación"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__prod_type_id
+msgid "Especie"
+msgstr "Especie"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__date_from
+msgid "Fecha Desde"
+msgstr "Fecha Desde"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__date_to
+msgid "Fecha Hasta"
+msgstr "Fecha Hasta"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.view_partner_form2
+msgid "Instrucciones Documentales"
+msgstr "Instrucciones Documentales"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__inv_partner_id
+msgid "Invoice Client"
+msgstr "Facturar Cliente"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__label_categ_id
+msgid "Label Category"
+msgstr "Etiqueta Categoría"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.blanket_order_form2
+msgid "Lines"
+msgstr "Líneas"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__prod_mark_id
+msgid "Marca"
+msgstr "Marca"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order_line__stickers__no
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order_line__wrap_paper__no
+msgid "NO"
+msgstr "NO"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__contract_nr
+msgid "Nro Contrato"
+msgstr "Nro. Contrato"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__stickers_obs
+msgid "Obs Stickers"
+msgstr "Obs. Stickers"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__sulf_obs
+msgid "Obs Sulfito"
+msgstr "Obs. Sulfito"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.blanket_order_form2
+msgid "Order Lines"
+msgstr "Líneas Instrucción"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__prod_origin_id
+msgid "Origen"
+msgstr "Origen"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.blanket_order_form2
+msgid "Other Information"
+msgstr "Otra Información"
+
+#. module: ld_sifi_contratos
+#: model:ir.model,name:ld_sifi_contratos.model_res_partner_category
+msgid "Partner Tags"
+msgstr "Etiquetas del contacto"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__payment_cond_id
+msgid "Payment Cond"
+msgstr "Condiciones Pago"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order__contract_type__agreed_price
+msgid "Precio Firme"
+msgstr "Precio Firme"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__box_price
+msgid "Precio por Caja"
+msgstr "Precio por Caja"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__ton_price
+msgid "Precio por Tonelada"
+msgstr "Precio por Tonelada"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order__contract_type__review_price
+msgid "Precios Revisables"
+msgstr "Precios Revisables"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order_line__fruit_type__owned
+msgid "Propia"
+msgstr "Propia"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__dest_port_id
+msgid "Puerto de Destino"
+msgstr "Puerto de Destino"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__orig_port_id
+msgid "Puerto de Origan"
+msgstr "Puerto de Origen"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__purchase_order
+msgid "Purchase Order"
+msgstr "Orden Compra"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__quality
+msgid "Quality"
+msgstr "Calidad"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__real_categ_id
+msgid "Real Category"
+msgstr "Categoría Real"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__representative_id
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__res_partner_category__type_ledesma__representante
+msgid "Representante"
+msgstr "Representante"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order_line__fruit_type__resale
+msgid "Reventa"
+msgstr "Reventa"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order_line__stickers__si
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order_line__wrap_paper__si
+msgid "SI"
+msgstr "SI"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_res_partner__sale_cond_id
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_res_users__sale_cond_id
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__sale_cond_id
+msgid "Sale Cond"
+msgstr "Cond. Venta"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.blanket_order_form2
+msgid "Sale Orders"
+msgstr "Intrucciones de Embarque"
+
+#. module: ld_sifi_contratos
+#: model:ir.model,name:ld_sifi_contratos.model_sale_blanket_order
+msgid "Sales Blanket Order"
+msgstr "Contratos"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__week_from
+msgid "Semana Desde"
+msgstr "Semana Desde"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__week_to
+msgid "Semana Hasta"
+msgstr "Semana Hasta"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.blanket_order_form2
+msgid "Set To Draft"
+msgstr "Enviar a Borrador"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__stickers
+msgid "Stickers"
+msgstr "Stickers"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields.selection,name:ld_sifi_contratos.selection__sale_blanket_order_line__quality__superior
+msgid "Superior"
+msgstr "Superior"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.blanket_order_form2
+msgid "Terms and conditions..."
+msgstr "Términos y condiciones..."
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__contract_type
+msgid "Tipo de Contrato"
+msgstr "Tipo de Contrato"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__prod_env_type_id
+msgid "Tipo de Envase"
+msgstr "Tipo de Envase"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__fruit_type
+msgid "Tipo de Fruta"
+msgstr "Tipo de Fruta"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order__pallets_qty
+msgid "Total de Pallets"
+msgstr "Total de Pallets"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_res_partner_category__type_ledesma
+msgid "Type Ledesma"
+msgstr "Tipo Ledesma"
+
+#. module: ld_sifi_contratos
+#: model_terms:ir.ui.view,arch_db:ld_sifi_contratos.blanket_order_form2
+msgid "UoM"
+msgstr "UdM"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__prod_variety_id
+msgid "Variedad"
+msgstr "Tipo de Envase"
+
+#. module: ld_sifi_contratos
+#: model:ir.model.fields,field_description:ld_sifi_contratos.field_sale_blanket_order_line__wrap_paper
+msgid "Wrap Paper"
+msgstr "Wrap Paper"

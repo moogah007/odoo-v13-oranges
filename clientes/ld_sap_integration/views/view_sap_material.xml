@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_material" model="ir.actions.act_window">
+        <field name="name">Material</field>
+        <field name="res_model">sap.material</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Material</p>
+        </field>
+    </record>
+
+    <record id="sap_material_view_form" model="ir.ui.view">
+        <field name="name">sap.material.view.form</field>
+        <field name="model">sap.material</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="MATNR"/>
+                            <field name="MAKTX"/>
+                            <field name="SPART"/>
+                            <field name="PRDHA"/>
+                            <field name="sinced"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="material" string="Material">
+                            <field name="material_line_ids">
+                                <tree editable="bottom">
+                                    <field name="VKORG"/>
+                                    <field name="VRKME"/>
+                                    <field name="VTWEG"/>
+                                    <field name="product_id"/>
+                                    <field name="TDLINE"/>
+                                    <field name="TDSPRAS"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="sap_attributes" string="Atributos">
+                            <field name="value_ids">
+                                <tree editable="bottom">
+                                    <field name="VALUE"/>
+                                    <field name="VALUE_TO"/>
+                                    <field name="CHARC_TXT"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_material_view_tree" model="ir.ui.view">
+        <field name="name">sap.material.view.tree</field>
+        <field name="model">sap.material</field>
+        <field name="arch" type="xml">
+            <tree string="Material">
+                <field name="MATNR"/>
+                <field name="MAKTX"/>
+                <field name="SPART"/>
+                <field name="PRDHA"/>
+                <field name="sinced"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

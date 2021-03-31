@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_sales_position" model="ir.actions.act_window">
+        <field name="name">SAP Sales Positions</field>
+        <field name="res_model">sap.sales.position</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Sales Positions</p>
+        </field>
+    </record>
+
+    <record id="sap_sales_position_view_form" model="ir.ui.view">
+        <field name="name">sap.sales.position.view.form</field>
+        <field name="model">sap.sales.position</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="VBAP_POSNR"/>
+                            <field name="VBAP_MATNR"/>
+                            <field name="KONV_WAERS"/>
+                            <field name="VBAP_KWMENG"/>
+                            <field name="VBAP_VRKME"/>
+                            <field name="VBAP_ABGRU"/>
+                        </group>
+                        <group>
+                            <field name="VBAP_WERKS"/>
+                            <field name="JEST_STAT"/>
+                            <field name="VBAP_UPDKZ"/>
+                            <field name="VBAP_VGBEL"/>
+                            <field name="VBAP_VGPOS"/>
+                            <field name="VBEP_EDATU"/>
+                            <field name="VBKD_BSTKD"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_sales_position_view_tree" model="ir.ui.view">
+        <field name="name">sap.sales.position.view.tree</field>
+        <field name="model">sap.sales.position</field>
+        <field name="arch" type="xml">
+            <tree string="SAP Positions">
+                <field name="VBAP_POSNR"/>
+                <field name="VBAP_MATNR"/>
+                <field name="KONV_WAERS"/>
+                <field name="VBAP_KWMENG"/>
+                <field name="VBAP_VRKME"/>
+                <field name="VBAP_ABGRU"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<record id="view_partner_product_visible_form" model="ir.ui.view">
+			<field name="name">res.partner.product.visible.form</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="base.view_partner_form"/>
+			<field name="arch" type="xml">
+				<page name='sales_purchases' position="after">
+					<page name="website_visible_products" string="Website Visible Products" groups="base.group_system">
+						<group>
+							<field name="add_product_from_history"/>
+						</group>
+						<group colspan="4" col="4">
+							<group colspan="2" col="2" string="Products">
+								<button type="action" class="btn btn-primary" name="%(action_open_product_history)d" icon="fa-cart-plus"
+									string="Add Product From Sale History" colspan="1"/>
+								<button type="object" class="btn btn-primary" name="add_all_product" icon="fa-plus-circle" string="Add All Products" colspan="1"/>
+								<field name="visible_product_ids" nolabel="1" colspan="2">
+									<tree>
+										<field name="name"/>
+										<field name="default_code"/>
+										<field name="categ_id"/>
+										<field name="qty_available"/>
+										<field name="virtual_available"/>
+									</tree>
+								</field>
+							</group>
+							<group colspan="2" col="2" string="Categories">
+								<button type="object" class="btn btn-primary" name="add_all_category" string="Add All Categories" colspan="1"/>
+								<field name="visible_category_ids" colspan="2" nolabel="1"/>
+							</group>
+						</group>
+					</page>
+				</page>
+			</field>
+		</record>
+
+	</data>
+</odoo>

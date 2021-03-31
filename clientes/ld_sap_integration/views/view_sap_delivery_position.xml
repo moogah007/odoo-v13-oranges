@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_delivery_position" model="ir.actions.act_window">
+        <field name="name">Delivery position</field>
+        <field name="res_model">sap.delivery.position</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Delivery position</p>
+        </field>
+    </record>
+
+    <record id="sap_delivery_position_view_form" model="ir.ui.view">
+        <field name="name">sap.delivery.position.view.form</field>
+        <field name="model">sap.delivery.position</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="VBKD_BSTKD"/>
+                            <field name="LIPS_POSNR"/>
+                            <field name="LIPS_MATNR"/>
+                            <field name="LIPS_LFIMG"/>
+                            <field name="LIPS_VRKME"/>
+                            <field name="LIPS_WERKS"/>
+                            <field name="LIPS_VGBEL"/>
+                            <field name="LIPS_VGPOS"/>
+                            <field name="LIPS_UPDKZ"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_delivery_position_view_tree" model="ir.ui.view">
+        <field name="name">sap.delivery.position.view.tree</field>
+        <field name="model">sap.delivery.position</field>
+        <field name="arch" type="xml">
+            <tree string="Delivery position">
+                <field name="VBKD_BSTKD"/>
+                <field name="LIPS_POSNR"/>
+                <field name="LIPS_MATNR"/>
+                <field name="LIPS_LFIMG"/>
+                <field name="LIPS_VRKME"/>
+                <field name="LIPS_WERKS"/>
+                <field name="LIPS_VGBEL"/>
+                <field name="LIPS_VGPOS"/>
+                <field name="LIPS_UPDKZ"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

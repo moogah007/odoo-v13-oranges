@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record model="ir.module.category" id="module_category_ld_sap_integration_admin">
+                <field name="name">SAP INT ADMIN</field>
+                <field name="description">SAP INT ADMIN</field>
+                <field name="sequence">20</field>
+        </record>
+        <record id="ld_sap_integration_admin_group" model="res.groups">
+            <field name="name">SAP INTEGRATION ADMIN</field>
+            <field name="comment">ld sap integration ADMIN</field>
+            <field name="category_id" ref="ld_sap_integration.module_category_ld_sap_integration_admin"/>
+        </record>
+
+        <record model="ir.module.category" id="module_category_ld_sap_integration_user">
+                <field name="name">SAP INT USER</field>
+                <field name="description">SAP INT USER</field>
+                <field name="sequence">20</field>
+        </record>
+        <record id="ld_sap_integration_user_group" model="res.groups">
+            <field name="name">SAP INTEGRATION USER</field>
+            <field name="comment">ld sap integration USER</field>
+            <field name="category_id" ref="ld_sap_integration.module_category_ld_sap_integration_user"/>
+        </record>
+    </data>
+
+    <record id="product_template_tree_view2" model="ir.ui.view">
+        <field name="name">product.template.tree.view2</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+            <field name="default_code" position="replace">
+                <field name="sap_code"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="product_product_tree_view2" model="ir.ui.view">
+        <field name="name">product.product.tree.view2</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_product_tree_view"/>
+        <field name="arch" type="xml">
+            <field name="default_code" position="replace">
+                <field name="sap_code"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_country_form2" model="ir.ui.view">
+        <field name="name">view.country.form2</field>
+        <field name="model">res.country</field>
+        <field name="inherit_id" ref="base.view_country_form"/>
+        <field name="arch" type="xml">
+            <field name="code" position="after">
+                <field name="sap_code"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_country_state_tree2" model="ir.ui.view">
+        <field name="name">view.country.state.tree2</field>
+        <field name="model">res.country.state</field>
+        <field name="inherit_id" ref="base.view_country_state_tree"/>
+        <field name="arch" type="xml">
+            <field name="code" position="after">
+                <field name="sap_code"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_payment_term_form2" model="ir.ui.view">
+        <field name="name">view.payment.term.form2</field>
+        <field name="model">account.payment.term</field>
+        <field name="inherit_id" ref="account.view_payment_term_form"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="sap_code"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_currency_form2" model="ir.ui.view">
+        <field name="name">view.currency.form2</field>
+        <field name="model">res.currency</field>
+        <field name="inherit_id" ref="base.view_currency_form"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="sap_code"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="product_template_only_form_view2" model="ir.ui.view">
+        <field name="name">product.template.only.form.view2</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <field name="categ_id" position="after">
+                <field name="sap_code"/>
+                <field name="sap_material_id"/>
+                <field name="KONV_WAERS"/>
+            </field>
+            <field name="company_id" position="after">
+                <field name="dist_channel"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="product_normal_form_view2" model="ir.ui.view">
+        <field name="name">product.normal.form.view2</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <field name="type" position="after">
+                <field name="sap_code"/>
+                <field name="KONV_WAERS"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="product_category_form_view2" model="ir.ui.view">
+        <field name="name">product.category.form.view2</field>
+        <field name="model">product.category</field>
+        <field name="inherit_id" ref="product.product_category_form_view"/>
+        <field name="arch" type="xml">
+            <field name="parent_id" position="after">
+                <field name="sap_code"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="product_uom_form_view2" model="ir.ui.view">
+        <field name="name">product.uom.form.view2</field>
+        <field name="model">uom.uom</field>
+        <field name="inherit_id" ref="uom.product_uom_form_view"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="sap_code"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="product_public_category_form_view2" model="ir.ui.view">
+        <field name="name">product.public.category.form.view2</field>
+        <field name="model">product.public.category</field>
+        <field name="inherit_id" ref="website_sale.product_public_category_form_view"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="sap_code"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="product_attribute_view_form" model="ir.ui.view">
+        <field name="name">product.attribute.form.inherit</field>
+        <field name="model">product.attribute</field>
+        <field name="inherit_id" ref="product.product_attribute_view_form"/>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="sap_code"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_order_form2" model="ir.ui.view">
+        <field name="name">view.order.form2</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='note_group']/group/field[@name='note']" position="attributes">
+                <attribute name="nolabel">0</attribute>
+            </xpath>
+            <field name="state" position="attributes">
+                <attribute name="statusbar_visible">"draft,sale,sent_failed,sent_to_sap,canceled"</attribute>
+                <attribute name="attrs">{'invisible':[('sap_code', '!=', False)]}</attribute>
+            </field>
+            <header>
+                <button string='Send To SAP' name="send_to_sap" type="object" class="btn-primary"
+                        attrs="{'invisible': ['|', ('state', 'not in', ('sale','sent_failed')), ('sap_code', '!=', False)]}"
+                        context="{'from_button':True}"
+                />
+            </header>
+            <field name="partner_shipping_id" position="after">
+                <field name="split_state" attrs="{'invisible':[('sap_code', '=', False)]}"/>
+                <!--field name="no_split_state" readonly="True"/-->
+                <field name="sap_document_type_id"/>
+                <field name="vbak_vkorg_id" attrs="{'invisible': [('sap_code', '=', False)]}"/>
+                <field name="vbak_vtweg_id" attrs="{'invisible': [('sap_code', '=', False)]}"/>
+                <field name="vbak_spart_id" attrs="{'invisible': [('sap_code', '=', False)]}"/>
+                <field name="ec_dest_id"
+                       domain="[('parent_id', '=', partner_id)]"
+                       />
+                <field name="pickup"/>
+                <field name="vbap_werks"
+                       attrs="{
+                            'invisible': [('sap_code', '=', False),('pickup', '=', False)],
+                            'required': [('pickup', '!=', False)]}"
+                />
+            </field>
+            <field name="partner_shipping_id" position="attributes">
+                <attribute name="domain">[('parent_id', '=', partner_id)]</attribute>
+            </field>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='discount']" position="before">
+                <field name="kschl" widget="many2many_tags"/>
+                <field name="vbap_werks"/>
+                <field name="KONV_WAERS"/>
+                <field name="root_partner_id" invisible="1"/>
+                <field name="DELIVERY_ADDRESS" domain="[('parent_id', '=', root_partner_id)]"/>
+                <field name="UTILIZACION" domain="[('parent_id', '=', root_partner_id)]"/>
+            </xpath>
+            <!--xpath expr="//field[@name='order_line']/tree" position="attributes">
+                <attribute name="editable"></attribute>
+            </xpath-->
+            <field name="validity_date" position="attributes">
+                <attribute name="attrs">{'invisible': False}</attribute>
+            </field>
+            <field name="validity_date" position="before">
+                <field name="start_date"/>
+            </field>
+            <field name="partner_id" position="attributes">
+                <attribute name="domain">[('parent_id', '=', False),'|', ('company_id', '=', False), ('company_id', '=', company_id)]</attribute>
+            </field>
+            <field name="partner_id" position="before">
+                <field name="sap_code" attrs="{'invisible': [('sap_code', '=', False)]}"/>
+            </field>
+            <field name="note" position="after">
+                <field name="note_obs"/>
+                <field name="note_inv"/>
+            </field>
+            <xpath expr="//notebook" position="inside">
+                <page name="sap_messages" string="SAP Response">
+                    <group>
+                        <group>
+                            <field name="sap_result"/>
+                            <field name="sap_message_recieved"/>
+                            <field name="sap_message_sent"/>
+                        </group>
+                    </group>
+                </page>
+                <page name="block"
+                      string="Block State"
+                      attrs="{'invisible': [('sap_code', '=', False)]}"
+                >
+                    <group>
+                        <group>
+                            <field name="vbuk_cmpsb"/>
+                            <field name="vbuk_cmpsf"/>
+                            <field name="vbuk_cmpsg"/>
+                            <field name="vbuk_cmgst"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="blanket_order_form2" model="ir.ui.view">
+        <field name="name">blanket.order.form2</field>
+        <field name="model">sale.blanket.order</field>
+        <field name="inherit_id" ref="sales_blanket_order.blanket_order_form"/>
+        <field name="arch" type="xml">
+            <field name="state" position="attributes">
+                <attribute name="statusbar_visible">"draft,sale,sent_failed,sent_to_sap,canceled"</attribute>
+                <attribute name="attrs">{'invisible':[('sap_code', '!=', False)]}</attribute>
+            </field>
+            <field name="partner_shipping_id" position="after">
+                <field name="split_state" attrs="{'invisible':[('sap_code', '=', False)]}"/>
+                <!--field name="no_split_state" readonly="True"/-->
+                <field name="vbak_vkorg_id" attrs="{'invisible': [('sap_code', '=', False)]}"/>
+                <field name="sap_document_type_id"/>
+                <field name="vbak_vtweg_id" attrs="{'invisible': [('sap_code', '=', False)]}"/>
+                <field name="vbak_spart_id" attrs="{'invisible': [('sap_code', '=', False)]}"/>
+                <field name="ec_dest_id"
+                       domain="[('parent_id', '=', partner_id)]"
+                       attrs="{'invisible': [('sap_code', '=', False)]}"/>
+                <field name="pickup"/>
+                <field name="vbap_werks" attrs="{'invisible': [('sap_code', '=', False)]}"/>
+            </field>
+            <field name="partner_shipping_id" position="attributes">
+                <attribute name="domain">[('parent_id', '=', partner_id)]</attribute>
+            </field>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='discount']" position="before">
+                <field name="kschl" widget="many2many_tags"/>
+                <field name="vbap_werks"/>
+                <field name="KONV_WAERS"/>
+                <field name="root_partner_id" invisible="1"/>
+                <field name="DELIVERY_ADDRESS" domain="[('parent_id', '=', root_partner_id)]"/>
+            </xpath>
+            <field name="validity_date" position="before">
+                <field name="start_date"/>
+            </field>
+            <field name="partner_id" position="before">
+                <field name="sap_code" attrs="{'invisible': [('sap_code', '=', False)]}"/>
+            </field>
+            <field name="note" position="after">
+                <field name="note_obs"/>
+            </field>
+            <xpath expr="//notebook/page[2]" position="after">
+                <page string="Block Status"
+                      name="block_status"
+                      attrs="{'invisible': [('sap_code', '=', False)]}">
+                    <group>
+                        <field name="vbuk_cmpsb"/>
+                        <field name="vbuk_cmpsf"/>
+                        <field name="vbuk_cmpsg"/>
+                        <field name="vbuk_cmgst"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_delivery_carrier_form2" model="ir.ui.view">
+        <field name="name">view.delivery.carrier.form2</field>
+        <field name="model">delivery.carrier</field>
+        <field name="inherit_id" ref="delivery.view_delivery_carrier_form"/>
+        <field name="arch" type="xml">
+            <field name="delivery_type" position="after">
+                <field name="pickup"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_partner_form2" model="ir.ui.view">
+        <field name="name">view.partner.form2</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="category_id" position="after">
+                <field name="sap_code"/>
+            </field>
+        </field>
+    </record>
+
+
+    <record id="view_delivery_carrier_form2" model="ir.ui.view">
+        <field name="name">view_delivery_carrier_form2</field>
+        <field name="model">delivery.carrier</field>
+        <field name="inherit_id" ref="delivery.view_delivery_carrier_form"/>
+        <field name="arch" type="xml">
+            <field name="active" position="after">
+                <field name="pickup"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="stock_picking_view_inherited" model="ir.ui.view">
+        <field name="name">stock.picking.view.inherited</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <field name="location_id" position="after">
+                <field name="sap_code"/>
+                <field name="official_nr"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="sale.action_orders" model="ir.actions.act_window">
+        <field name="name">Sales Orders</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sale.order</field>
+        <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
+        <field name="search_view_id" ref="sale.sale_order_view_search_inherit_sale"/>
+        <field name="context">{}</field>
+        <field name="domain">[
+            ('state', 'not in', ('draft', 'sent', 'cancel')),
+            ('sap_code', '!=', False),
+            ]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new quotation, the first step of a new sale!
+            </p><p>
+                Once the quotation is confirmed, it becomes a sales order.<br/> You will be able to create an invoice and collect the payment.
+            </p>
+        </field>
+    </record>
+
+    <record id="sale_order_view_search_inherit_quotation2" model="ir.ui.view">
+        <field name="name">sale.order.search.inherit.quotation2</field>
+        <field name="model">sale.order</field>
+        <field name="mode">extension</field>
+        <field name="inherit_id" ref="sale.sale_order_view_search_inherit_quotation"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='my_quotation']" position="attributes">
+                <attribute name="domain">[('user_id', '=', uid),('sap_code', '=', False)]</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

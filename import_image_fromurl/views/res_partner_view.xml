@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<record id="view_partner_image_fileform" model="ir.ui.view">
+			<field name="name">res.partner.image file.inherit</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="base.view_partner_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//page[@name='internal_notes']/field[@name='comment']" position="before">
+					<group groups="import_image_fromurl.import_image_url_file">
+						<field name="image_url" class="oe_inline" widget="url"/>
+					</group>
+				</xpath>
+			</field>
+		</record>
+
+	</data>
+</odoo>

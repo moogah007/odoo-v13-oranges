@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_vbak_vtweg" model="ir.actions.act_window">
+        <field name="name">Channel</field>
+        <field name="res_model">sap.vbak.vtweg</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Channel</p>
+        </field>
+    </record>
+
+    <record id="sap_vbak_vtweg_view_form" model="ir.ui.view">
+        <field name="name">sap.vbak.vtweg.view.form</field>
+        <field name="model">sap.vbak.vtweg</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_vbak_vtweg_view_tree" model="ir.ui.view">
+        <field name="name">sap.vbak.vtweg.view.tree</field>
+        <field name="model">sap.vbak.vtweg</field>
+        <field name="arch" type="xml">
+            <tree string="Sales Area">
+                <field name="code"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

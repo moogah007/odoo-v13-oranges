@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_upload_url_file,upload.url.file,model_upload_url_file,import_image_fromurl.import_image_url_file,1,1,1,1
+access_import_image_url_log,import.image.url.log,model_import_image_url_log,import_image_fromurl.import_image_url_file,1,1,1,1

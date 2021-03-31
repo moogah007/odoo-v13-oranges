@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_invoice" model="ir.actions.act_window">
+        <field name="name">Invoice</field>
+        <field name="res_model">sap.invoice</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Invoice</p>
+        </field>
+    </record>
+
+    <record id="sap_invoice_view_form" model="ir.ui.view">
+        <field name="name">sap.invoice.view.form</field>
+        <field name="model">sap.invoice</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="VBRK_VBELN"/>
+                            <field name="VBRK_XBLNR"/>
+                            <field name="VBRK_FKDAT"/>
+                            <field name="RETURN"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="interlocutor" string="Interlocutor">
+                            <field name="sap_invoice_interlocutor_ids">
+                                <tree>
+                                    <field name="VBPA_PARVW"/>
+                                    <field name="VBPA_KUNNR"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="position" string="Position">
+                            <field name="sap_invoice_position_ids">
+                                <tree>
+                                    <field name="VBKD_BSTKD"/>
+                                    <field name="VBRP_POSNR"/>
+                                    <field name="VBRP_MATNR"/>
+                                    <field name="VBRP_FKIMG"/>
+                                    <field name="VBRP_VRKME"/>
+                                    <field name="VBRP_NETWR"/>
+                                    <field name="VBRP_MWSBP"/>
+                                    <field name="NETWR_MWSBP"/>
+                                    <field name="VBRK_WAERK"/>
+                                    <field name="VBRP_AUBEL"/>
+                                    <field name="VBRP_AUPOS"/>
+                                    <field name="VBRP_VGBEL"/>
+                                    <field name="VBRP_VGPOS"/>
+                                    <field name="NETWR_MWSBP"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_invoice_view_tree" model="ir.ui.view">
+        <field name="name">sap.invoice.view.tree</field>
+        <field name="model">sap.invoice</field>
+        <field name="arch" type="xml">
+            <tree string="Invoice">
+                <field name="VBRK_VBELN"/>
+                <field name="VBRK_XBLNR"/>
+                <field name="VBRK_FKDAT"/>
+                <field name="RETURN"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

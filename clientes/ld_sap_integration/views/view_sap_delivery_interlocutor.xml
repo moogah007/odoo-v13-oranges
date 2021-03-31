@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_delivery_interlocutor" model="ir.actions.act_window">
+        <field name="name">Delivery Interlocutor</field>
+        <field name="res_model">sap.delivery.interlocutor</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Delivery Interlocutor</p>
+        </field>
+    </record>
+
+    <record id="sap_delivery_interlocutor_view_form" model="ir.ui.view">
+        <field name="name">sap.delivery.interlocutor.view.form</field>
+        <field name="model">sap.delivery.interlocutor</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="VBPA_PARVW"/>
+                            <field name="VBPA_KUNNR"/>
+                            <field name="VBPA_PERNR"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_delivery_interlocutor_view_tree" model="ir.ui.view">
+        <field name="name">sap.delivery.interlocutor.view.tree</field>
+        <field name="model">sap.delivery.interlocutor</field>
+        <field name="arch" type="xml">
+            <tree string="Delivery Interlocutor">
+                <field name="VBPA_PARVW"/>
+                <field name="VBPA_KUNNR"/>
+                <field name="VBPA_PERNR"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

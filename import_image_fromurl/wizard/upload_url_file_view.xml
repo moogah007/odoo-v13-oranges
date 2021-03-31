@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<record id="upload_url_file_wizard" model="ir.ui.view">
+			<field name="name">upload.url.file.wizard</field>
+			<field name="model">upload.url.file</field>
+			<field name="arch" type="xml">
+				<form string="Upload Bulk images">
+					<group>
+						<field name="applied_object"/>
+						<field name="product_map_field"
+							attrs="{'invisible': [('applied_object','not in',('product','product_variants'))], 'required':[('applied_object','in',('product','product_variants'))]}"/>
+						<field name="partner_map_field"
+							attrs="{'invisible': [('applied_object','not in',('supplier','customer'))], 'required':[('applied_object','in',('supplier','customer'))]}"/>
+						<field name="file_type"/>
+						<field name="csv_excel_file" image_name="file_name"/>
+						<field name="file_name" invisible="1"/>
+					</group>
+					<footer>
+						<button type="object" name="upload_images" string="Upload Images" class="fa fa-upload"/>
+					</footer>
+				</form>
+			</field>
+		</record>
+
+		<record id="action_upload_url_file" model="ir.actions.act_window">
+			<field name="name">Upload Bulk Images From URL File</field>
+			<field name="res_model">upload.url.file</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+
+
+		<record id="view_import_image_url_log_form" model="ir.ui.view">
+			<field name="name">import.image.url.log.form</field>
+			<field name="model">import.image.url.log</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Import Image Log">
+					<group>
+						<field name="object"/>
+						<field name="resource_id"/>
+						<field name="result"/>
+						<field name="error_message"/>
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_import_image_url_log_tree" model="ir.ui.view">
+			<field name="name">import.image.url.log.tree</field>
+			<field name="model">import.image.url.log</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Import Image Log">
+					<field name="object"/>
+					<field name="resource_id"/>
+					<field name="result"/>
+				</tree>
+			</field>
+		</record>
+
+		<record id="action_import_image_url_log" model="ir.actions.act_window">
+			<field name="name">Import Images URL Log</field>
+			<field name="res_model">import.image.url.log</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem id="menu_upload_url_file" parent="sale.menu_sale_config" name="Upload Bulk Images" sequence="3"
+			groups="import_image_fromurl.import_image_url_file"/>
+		<menuitem id="sub_menu_upload_images_file" parent="menu_upload_url_file" groups="import_image_fromurl.import_image_url_file"
+			name="Upload Images URL File" action="action_upload_url_file" sequence="1"/>
+		<menuitem id="sub_menu_import_image_url_log" parent="menu_upload_url_file" groups="import_image_fromurl.import_image_url_file"
+			name="Import Images Log" action="action_import_image_url_log" sequence="2"/>
+
+	</data>
+</odoo>

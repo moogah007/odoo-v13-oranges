@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_waers" model="ir.actions.act_window">
+        <field name="name">SAP Currency</field>
+        <field name="res_model">sap.waers</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Currency</p>
+        </field>
+    </record>
+
+    <record id="sap_waers_view_form" model="ir.ui.view">
+        <field name="name">sap.waers.view.form</field>
+        <field name="model">sap.waers</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_waers_view_tree" model="ir.ui.view">
+        <field name="name">sap.waers.view.tree</field>
+        <field name="model">sap.waers</field>
+        <field name="arch" type="xml">
+            <tree string="Document Type">
+                <field name="code"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

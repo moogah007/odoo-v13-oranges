@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+
+		<record id="public_product_1" model="public.product">
+			<field name="test">True</field>
+		</record>
+
+	</data>
+</odoo>

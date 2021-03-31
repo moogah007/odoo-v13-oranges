@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_invoice_position" model="ir.actions.act_window">
+        <field name="name">Invoice position</field>
+        <field name="res_model">sap.invoice.position</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Invoice position</p>
+        </field>
+    </record>
+
+    <record id="sap_invoice_position_view_form" model="ir.ui.view">
+        <field name="name">sap.invoice.position.view.form</field>
+        <field name="model">sap.invoice.position</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="VBKD_BSTKD"/>
+                            <field name="VBRP_POSNR"/>
+                            <field name="VBRP_MATNR"/>
+                            <field name="VBRP_FKIMG"/>
+                            <field name="VBRP_VRKME"/>
+                            <field name="VBRP_NETWR"/>
+                            <field name="VBRP_MWSBP"/>
+                        </group>
+                        <group>
+                            <field name="NETWR_MWSBP"/>
+                            <field name="VBRK_WAERK"/>
+                            <field name="VBRP_AUBEL"/>
+                            <field name="VBRP_AUPOS"/>
+                            <field name="VBRP_VGBEL"/>
+                            <field name="VBRP_VGPOS"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_invoice_position_view_tree" model="ir.ui.view">
+        <field name="name">sap.invoice.position.view.tree</field>
+        <field name="model">sap.invoice.position</field>
+        <field name="arch" type="xml">
+            <tree string="Invoice position">
+                <field name="VBKD_BSTKD"/>
+                <field name="VBRP_POSNR"/>
+                <field name="VBRP_MATNR"/>
+                <field name="VBRP_FKIMG"/>
+                <field name="VBRP_VRKME"/>
+                <field name="VBRP_NETWR"/>
+                <field name="VBRP_MWSBP"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

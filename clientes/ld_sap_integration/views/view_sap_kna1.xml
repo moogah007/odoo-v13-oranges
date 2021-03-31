@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_customers" model="ir.actions.act_window">
+        <field name="name">Customers</field>
+        <field name="res_model">sap.kna1</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Customers</p>
+        </field>
+    </record>
+
+    <record id="sap_kna1_view_form" model="ir.ui.view">
+        <field name="name">sap.kna1.view.form</field>
+        <field name="model">sap.kna1</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="KUNNR"/>
+                            <field name="AUFSD"/>
+                            <!--field name="KURST"/-->
+                            <field name="BRSCH"/>
+                            <field name="LAND1"/>
+                            <field name="NAME1"/>
+                            <field name="PSTLZ"/>
+                            <field name="process_date"/>
+                        </group>
+                        <group>
+                            <field name="REGIO"/>
+                            <field name="ORT01"/>
+                            <field name="STCD1"/>
+                            <field name="STRAS"/>
+                            <field name="TELF1"/>
+                            <field name="TELF2"/>
+                            <field name="STCDT"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="sales_area" string="Sales Area">
+                            <field name="sap_knvv_ids">
+                                <tree>
+                                    <field name="KUNNR"/>
+                                    <field name="VKORG"/>
+                                    <field name="VTWEG"/>
+                                    <field name="SPART"/>
+                                    <field name="WAERS"/>
+                                    <field name="ZTERM"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="society" string="Society">
+                            <field name="sap_knb1_ids">
+                                <tree>
+                                    <field name="KUNNR"/>
+                                    <field name="BUKRS"/>
+                                    <field name="BUSAB"/>
+                                    <field name="INTAD"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_kna1_view_tree" model="ir.ui.view">
+        <field name="name">sap.kna1.view.tree</field>
+        <field name="model">sap.kna1</field>
+        <field name="arch" type="xml">
+            <tree string="Customers">
+                <field name="KUNNR"/>
+                <field name="BRSCH"/>
+                <field name="LAND1"/>
+                <field name="NAME1"/>
+                <field name="PSTLZ"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

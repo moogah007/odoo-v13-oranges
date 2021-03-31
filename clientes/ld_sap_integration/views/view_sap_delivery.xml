@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_delivery" model="ir.actions.act_window">
+        <field name="name">Delivery</field>
+        <field name="res_model">sap.delivery</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Delivery</p>
+        </field>
+    </record>
+
+    <record id="sap_delivery_view_form" model="ir.ui.view">
+        <field name="name">sap.delivery.view.form</field>
+        <field name="model">sap.delivery</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="LIKP_VBELN"/>
+                            <field name="LIKP_XBLNR"/>
+                            <field name="LIKP_WADAT_IST"/>
+                            <field name="LIKP_UPDKZ"/>
+                            <field name="RETURN"/>
+                            <field name="DELIVERY"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="interlocutor" string="Interlocutor">
+                            <field name="sap_delivery_interlocutor_ids">
+                                <tree>
+                                    <field name="VBPA_PARVW"/>
+                                    <field name="VBPA_KUNNR"/>
+                                    <field name="VBPA_PERNR"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="position" string="Position">
+                            <field name="sap_delivery_position_ids">
+                                <tree>
+                                    <field name="VBKD_BSTKD"/>
+                                    <field name="LIPS_POSNR"/>
+                                    <field name="LIPS_MATNR"/>
+                                    <field name="LIPS_LFIMG"/>
+                                    <field name="LIPS_VRKME"/>
+                                    <field name="LIPS_WERKS"/>
+                                    <field name="LIPS_VGBEL"/>
+                                    <field name="LIPS_VGPOS"/>
+                                    <field name="sinced"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_delivery_view_tree" model="ir.ui.view">
+        <field name="name">sap.delivery.view.tree</field>
+        <field name="model">sap.delivery</field>
+        <field name="arch" type="xml">
+            <tree string="Delivery">
+                <field name="LIKP_VBELN"/>
+                <field name="LIKP_XBLNR"/>
+                <field name="LIKP_WADAT_IST"/>
+                <field name="RETURN"/>
+                <field name="DELIVERY"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

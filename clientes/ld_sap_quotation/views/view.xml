@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_quotation_tree2" model="ir.ui.view">
+        <field name="name">view.quotation.tree2</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+        <field name="arch" type="xml">
+            <!--field name="name" position="after">
+                <field name="sap_ref"/>
+            </field-->
+            <field name="partner_id" position="after">
+                <field name="client_order_ref"/>
+            </field>
+            <field name="partner_id" position="after">
+                <field name="partner_address"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_order_tree2" model="ir.ui.view">
+        <field name="name">view.order.tree2</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <field name="name" position="before">
+                <field name="sap_code"/>
+            </field>
+            <field name="name" position="after">
+                <field name="client_order_ref"/>
+                <field name="VBKD_BSTKD"/>
+                <field name="split_state"/>
+            </field>
+            <field name="partner_id" position="after">
+                <field name="partner_address"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_order_tree3" model="ir.ui.view">
+        <field name="name">view.order.tree3</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="website_sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <field name="website_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_order_form2" model="ir.ui.view">
+        <field name="name">view.order.form2</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <field name="state" position="attributes">
+                <attribute name="statusbar_visible">draft,sent,sale,approved,dispatched</attribute>
+                <attribute name="attrs">{'readonly':False}</attribute>
+                <attribute name="options">{'clickable': '1'}</attribute>
+            </field>
+        </field>
+    </record>
+    
+</odoo>

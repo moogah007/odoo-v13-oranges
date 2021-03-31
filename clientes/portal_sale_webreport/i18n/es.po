@@ -1,0 +1,325 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* portal_sale_webreport
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-03 14:38+0000\n"
+"PO-Revision-Date: 2021-03-02 12:20-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: portal_sale_webreport
+#: model:ir.actions.report,print_report_name:portal_sale_webreport.action_portal_report_sale_blanket_order
+msgid "'Contract Report'"
+msgstr "Reporte de Contratos"
+
+#. module: portal_sale_webreport
+#: model:ir.actions.report,print_report_name:portal_sale_webreport.action_portal_linked_report_sale_blanket_order
+msgid "'Linked Contract'"
+msgstr "Contratos Asociados"
+
+#. module: portal_sale_webreport
+#: model:ir.actions.report,print_report_name:portal_sale_webreport.action_portal_linked_report_saleorder
+msgid "'Linked Report'"
+msgstr "Reportes Asociados"
+
+#. module: portal_sale_webreport
+#: model:ir.actions.report,print_report_name:portal_sale_webreport.action_portal_report_saleorder
+msgid "'Order Report'"
+msgstr "Reporte"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+msgid "<span style=\"font-size: 22px; font-weight: bold;\">Contract Report</span>"
+msgstr ""
+"<span style=\"font-size: 22px; font-weight: bold;\">Reporte de Contrato</span>"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+msgid ""
+"<span style=\"font-size: 22px; font-weight: bold;\">Linked Contract Report</"
+"span>"
+msgstr ""
+"<span style=\"font-size: 22px; font-weight: bold;\">Reporte de Contrato</span>"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+msgid ""
+"<span style=\"font-size: 22px; font-weight: bold;\">Linked Order Report</span>"
+msgstr ""
+"<span style=\"font-size: 22px; font-weight: bold;\">Reporte de Orden</span>"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "<span style=\"font-size: 22px; font-weight: bold;\">Order Report</span>"
+msgstr ""
+"<span style=\"font-size: 22px; font-weight: bold;\">Reporte de Orden</span>"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "<strong>Customer</strong>"
+msgstr "<strong>Cliente</strong>"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "<strong>Destination</strong>"
+msgstr "<strong>Destino</strong>"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "<strong>Order</strong>"
+msgstr "<strong>Orden</strong>"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "<strong>Payment Term</strong>"
+msgstr "<strong>Términos de Pago</strong>"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "<strong>Reference</strong>"
+msgstr "<strong>Referencia:</strong>"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "<strong>Shipping Address:</strong>"
+msgstr "<strong>Dirección de Entrega:</strong>"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "<strong>Validity</strong>"
+msgstr "<strong>Validez</strong>"
+
+#. module: portal_sale_webreport
+#: model:ir.model,name:portal_sale_webreport.model_sale_blanket_order_line
+msgid "Blanket Order Line"
+msgstr "Línea de Contrato"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: portal_sale_webreport
+#: model:ir.actions.report,name:portal_sale_webreport.action_portal_report_sale_blanket_order
+msgid "Contract Report"
+msgstr "Reporte"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "Delivered"
+msgstr "Entregado"
+
+#. module: portal_sale_webreport
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_report_portal_linked_saleorder__display_name
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_rprt_prtl_lnkd_sale_bankt_ordr__display_name
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_blanket_order_report_xlsx__display_name
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_blnkt_order_lnkd_rprt_xlsx__display_name
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_order_linked_report_xlsx__display_name
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_order_report_xlsx__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "Export (XLXS)"
+msgstr "Exportar (XLXS)"
+
+#. module: portal_sale_webreport
+#: model:ir.model,name:portal_sale_webreport.model_report_portal_sale_webreport_report_portal_linked_saleorder
+#: model:ir.model,name:portal_sale_webreport.model_report_portal_sale_webreport_rprt_prtl_lnkd_sale_bankt_ordr
+msgid "Get hash integrity result as PDF."
+msgstr "Obtener hash resultado integridad como PDF."
+
+#. module: portal_sale_webreport
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_report_portal_linked_saleorder__id
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_rprt_prtl_lnkd_sale_bankt_ordr__id
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_blanket_order_report_xlsx__id
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_blnkt_order_lnkd_rprt_xlsx__id
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_order_linked_report_xlsx__id
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_order_report_xlsx__id
+msgid "ID"
+msgstr "ID"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "Invoicing Address:"
+msgstr "Dirección de Facturación:"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "Invoicing and Shipping Address:"
+msgstr "Dirección de Facturación y de Entrega:"
+
+#. module: portal_sale_webreport
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_sale_blanket_order__is_admin
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_sale_order__is_admin
+msgid "Is Admin?"
+msgstr "Es Admin?"
+
+#. module: portal_sale_webreport
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_report_portal_linked_saleorder____last_update
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_rprt_prtl_lnkd_sale_bankt_ordr____last_update
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_blanket_order_report_xlsx____last_update
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_blnkt_order_lnkd_rprt_xlsx____last_update
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_order_linked_report_xlsx____last_update
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_report_portal_sale_webreport_sale_order_report_xlsx____last_update
+msgid "Last Modified on"
+msgstr "Ult. Modificación en"
+
+#. module: portal_sale_webreport
+#: model:ir.actions.report,name:portal_sale_webreport.action_portal_linked_report_sale_blanket_order
+msgid "Linked Contracts"
+msgstr "Contratos Asociados"
+
+#. module: portal_sale_webreport
+#: model:ir.actions.report,name:portal_sale_webreport.action_portal_linked_report_saleorder
+#: model:ir.actions.report,name:portal_sale_webreport.sale_order_linked_report_xlsx
+msgid "Linked Report"
+msgstr "Reportes Asociados"
+
+#. module: portal_sale_webreport
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_sale_blanket_order__VBKD_BSTKD
+msgid "Main Order No"
+msgstr "Nro. Orden Principal"
+
+#. module: portal_sale_webreport
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_sale_order__VBKD_BSTKD
+msgid "Main Order No (Order)"
+msgstr "Nro. Orden Principal (Orden)"
+
+#. module: portal_sale_webreport
+#: model:ir.actions.report,name:portal_sale_webreport.action_portal_report_saleorder
+#: model:ir.actions.report,name:portal_sale_webreport.sale_order_report_xlsx
+msgid "Order Report"
+msgstr "Reporte de Orden"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "Print Preview"
+msgstr "Imprimir Vista Previa"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "Product"
+msgstr "Producto"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+msgid "Referenced"
+msgstr "Referencia"
+
+#. module: portal_sale_webreport
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_sale_blanket_order_line__BVAP_ABGRU
+#: model:ir.model.fields,field_description:portal_sale_webreport.field_sale_order_line__BVAP_ABGRU
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: portal_sale_webreport
+#: model:ir.actions.report,name:portal_sale_webreport.sale_blnkt_order_lnkd_rprt_xlsx
+msgid "Sale Blanket Order Linked Report XLSX"
+msgstr "Reporte de Contrato XLSX"
+
+#. module: portal_sale_webreport
+#: model:ir.actions.report,name:portal_sale_webreport.sale_blanket_order_report_xlsx
+msgid "Sale Order Report XLSX"
+msgstr "Reporte de Orden XLSX"
+
+#. module: portal_sale_webreport
+#: model:ir.model,name:portal_sale_webreport.model_report_portal_sale_webreport_sale_blanket_order_report_xlsx
+#: model:ir.model,name:portal_sale_webreport.model_report_portal_sale_webreport_sale_blnkt_order_lnkd_rprt_xlsx
+#: model:ir.model,name:portal_sale_webreport.model_report_portal_sale_webreport_sale_order_linked_report_xlsx
+#: model:ir.model,name:portal_sale_webreport.model_report_portal_sale_webreport_sale_order_report_xlsx
+msgid "Sale Order XLSX Report"
+msgstr "Reporte de Orden XLSX"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "Sale Orders"
+msgstr "VOLVER"
+
+#. module: portal_sale_webreport
+#: model:ir.model,name:portal_sale_webreport.model_sale_blanket_order
+msgid "Sales Blanket Order"
+msgstr "VOLVER"
+
+#. module: portal_sale_webreport
+#: model:ir.model,name:portal_sale_webreport.model_sale_order
+msgid "Sales Order"
+msgstr "Orden de Ventas"
+
+#. module: portal_sale_webreport
+#: model:ir.model,name:portal_sale_webreport.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Detalle de Contrato"
+
+#. module: portal_sale_webreport
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_linked_saleorder_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_sale_blanket_order_document
+#: model_terms:ir.ui.view,arch_db:portal_sale_webreport.report_portal_saleorder_document
+msgid "to"
+msgstr "a"

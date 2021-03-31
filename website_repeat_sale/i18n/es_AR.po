@@ -1,0 +1,33 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_repeat_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-25 14:13+0000\n"
+"PO-Revision-Date: 2021-02-25 11:16-0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Language: es_AR\n"
+
+#. module: website_repeat_sale
+#: model_terms:ir.ui.view,arch_db:website_repeat_sale.website_repeat_sale_order_in_list
+msgid ""
+"<i class=\"fa  fa-shopping-cart\" role=\"img\" aria-label=\"Repeat\" title="
+"\"Repeat\" style=\"color: black;\"/>"
+msgstr ""
+"<i class=\"fa  fa-shopping-cart\" role=\"img\" aria-label=\"Repeat\" title="
+"\"Repetir\" style=\"color: black;\"/>"
+
+#. module: website_repeat_sale
+#: model_terms:ir.ui.view,arch_db:website_repeat_sale.website_repeat_sale_order_in_form
+#: model_terms:ir.ui.view,arch_db:website_repeat_sale.website_repeat_sale_order_in_list
+msgid "Reorder"
+msgstr "Repetir Pedido"

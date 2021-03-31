@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="action_sap_brsch" model="ir.actions.act_window">
+        <field name="name">SAP Industry</field>
+        <field name="res_model">sap.brsch</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>SAP Industry</p>
+        </field>
+    </record>
+
+    <record id="sap_brsch_view_form" model="ir.ui.view">
+        <field name="name">sap.brsch.view.form</field>
+        <field name="model">sap.brsch</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sap_brsch_view_tree" model="ir.ui.view">
+        <field name="name">sap.brsch.view.tree</field>
+        <field name="model">sap.brsch</field>
+        <field name="arch" type="xml">
+            <tree string="SAP Industry">
+                <field name="code"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

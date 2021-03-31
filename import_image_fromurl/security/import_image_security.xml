@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="import_image_fromurl.import_image_url_file" model="res.groups">
+            <field name="name">Upload Images From URL/File</field>
+        </record>
+
+    </data>
+</odoo>

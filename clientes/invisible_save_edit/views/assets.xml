@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" inherit_id="web.assets_backend" name="invisible_save_edit assets">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/invisible_save_edit/static/src/js/form_controller.js"/>
+        </xpath>
+    </template>
+
+    <record id="sale.action_quotations_with_onboarding" model="ir.actions.act_window">
+        <field name="context">
+            {
+                'search_default_my_quotation': 1,
+                'invisible_save_edit': [('is_hide_edit_button', '=', True)]
+            }
+        </field>
+    </record>
+
+    <record id="sale.action_orders" model="ir.actions.act_window">
+        <field name="context">
+            {
+                'invisible_save_edit': [('is_hide_edit_button', '=', True)]
+            }
+        </field>
+    </record>
+
+    <record id="view_sales_order_invisible_edit" model="ir.ui.view">
+        <field name="name">sale.order.invisible.edit.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet" position="inside">
+                <field name="is_hide_edit_button"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="sales_blanket_order.action_window_blanket_order" model="ir.actions.act_window">
+        <field name="context">
+            {
+                'invisible_save_edit': [('is_hide_edit_button', '=', True)]
+            }
+        </field>
+    </record>
+
+    <record id="blanket_order_form_invisible_edit" model="ir.ui.view">
+        <field name="name">sale.blanket.order.invisible.edit.form</field>
+        <field name="model">sale.blanket.order</field>
+        <field name="inherit_id" ref="sales_blanket_order.blanket_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet" position="inside">
+                <field name="is_hide_edit_button"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

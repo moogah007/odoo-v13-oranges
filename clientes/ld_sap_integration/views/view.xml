@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--record model="ir.rule" id="no_edit_in_sent_to_sap">
+            <field name="name">No Edit in sent to sap state nor sap code = NULL</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+            <field eval="0" name="perm_unlink"/>
+            <field eval="0" name="perm_write"/>
+            <field eval="1" name="perm_read"/>
+            <field eval="0" name="perm_create"/>
+            <field name="domain_force">['|', ('state', '=', 'sent_to_sap'), ('sap_code', '!=', False)]</field>
+        </record>
+        <record model="ir.rule" id="no_edit_in_sent_to_sap_blanket">
+            <field name="name">No Edit in sent to sap state nor sap code = NULL (Blanket)</field>
+            <field name="model_id" ref="sales_blanket_order.model_sale_blanket_order"/>
+            <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+            <field eval="0" name="perm_unlink"/>
+            <field eval="0" name="perm_write"/>
+            <field eval="1" name="perm_read"/>
+            <field eval="0" name="perm_create"/>
+            <field name="domain_force">['|', ('state', '=', 'sent_to_sap'), ('sap_code', '!=', False)]</field>
+        </record-->
+
+        <record id="group_sap_user" model="res.groups">
+            <field name="name">User</field>
+            <!--field name="category_id" ref="base.module_category_operations_inventory"/-->
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+        <record id="group_sap_manager" model="res.groups">
+            <field name="name">Administrator</field>
+            <!--field name="category_id" ref="base.module_category_operations_inventory"/-->
+            <field name="implied_ids" eval="[(4, ref('group_sap_user'))]"/>
+            <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+        </record>
+
+        <record id="cust2partner_job" model="ir.cron">
+            <field name="name">SAP: Customer to Partner</field>
+            <field name="model_id" ref="model_sap_kna1"/>
+            <field name="state">code</field>
+            <field name="code">model.cust2partner()</field>
+            <field name='interval_number'>5</field>
+            <field name='interval_type'>minutes</field>
+            <field name="numbercall">-1</field>
+        </record>
+        <record id="create_new_sales" model="ir.cron">
+            <field name="name">SAP: sales to Orders </field>
+            <field name="model_id" ref="model_sap_sales"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_create_new_sales()</field>
+            <field name='interval_number'>2</field>
+            <field name='interval_type'>minutes</field>
+            <field name="numbercall">-1</field>
+        </record>
+        <record id="create_new_product" model="ir.cron">
+            <field name="name">SAP: Materials to Products</field>
+            <field name="model_id" ref="model_sap_material"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_create_new_products()</field>
+            <field name='interval_number'>5</field>
+            <field name='interval_type'>minutes</field>
+            <field name="numbercall">-1</field>
+        </record>
+        <record id="create_new_picking" model="ir.cron">
+            <field name="name">SAP: Delivery to Pickings</field>
+            <field name="model_id" ref="model_sap_delivery"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_create_deliveries()</field>
+            <field name='interval_number'>2</field>
+            <field name='interval_type'>minutes</field>
+            <field name="numbercall">-1</field>
+        </record>
+        <record id="create_new_invoice" model="ir.cron">
+            <field name="name">SAP: Create Invoices</field>
+            <field name="model_id" ref="model_sap_invoice"/>
+            <field name="state">code</field>
+            <field name="code">model.cron_create_invoices()</field>
+            <field name='interval_number'>2</field>
+            <field name='interval_type'>minutes</field>
+            <field name="numbercall">-1</field>
+        </record>
+    </data>
+
+    <menuitem name="SAP Integration" id="menu_sap_root" sequence="30"
+              web_icon="ld_sap_integration,static/description/icon.png"/>
+
+
+    <menuitem id="menu_sap_management"
+              name="Maestros"
+              parent="menu_sap_root"
+              sequence="2"/>
+
+    <menuitem id="menu_item_sap_kna1"
+              name="Customers"
+              parent="menu_sap_management"
+              sequence="1" action="action_sap_customers"/>
+
+    <menuitem id="menu_item_sap_knb1"
+              name="Society"
+              parent="menu_sap_management"
+              sequence="2" action="action_sap_society"/>
+
+    <menuitem id="menu_item_sap_knvp"
+              name="Interlocutor Functions"
+              parent="menu_sap_management"
+              sequence="2" action="action_sap_inter_functions"/>
+
+
+    <menuitem id="menu_item_sap_knvv"
+              name="Sales Area"
+              parent="menu_sap_management"
+              sequence="2" action="action_sap_sales_area"/>
+
+    <menuitem id="menu_item_sap_lfa1"
+              name="Suppliers"
+              parent="menu_sap_management"
+              sequence="2" action="action_sap_lfa1"/>
+
+
+    <menuitem id="menu_sap_operations"
+              name="Operations"
+              parent="menu_sap_root"
+              sequence="3"/>
+
+    <menuitem id="menu_item_sap_sales"
+              name="Sales"
+              parent="menu_sap_operations"
+              sequence="1" action="action_sap_sales"/>
+
+    <menuitem id="menu_item_sap_sales_interlocutor"
+              name="Interlocutor"
+              parent="menu_sap_operations"
+              sequence="2" action="action_sap_sales_interlocutor"/>
+
+    <menuitem id="menu_item_sap_sales_position"
+              name="Position"
+              parent="menu_sap_operations"
+              sequence="3" action="action_sap_sales_position"/>
+
+
+
+    <menuitem id="menu_sap_settings"
+              name="Setings"
+              parent="menu_sap_root"
+              sequence="3"/>
+
+    <menuitem id="menu_item_sap_channel"
+              name="Channel"
+              parent="menu_sap_settings"
+              sequence="1" action="action_sap_vbak_vtweg"/>
+
+    <menuitem id="menu_item_sap_errors"
+              name="SAP Sinc Errors"
+              parent="menu_sap_settings"
+              sequence="1" action="action_sap_sinc_errors"/>
+
+    <menuitem id="menu_item_sap_division"
+              name="Division"
+              parent="menu_sap_settings"
+              sequence="2" action="action_sap_vbak_spart"/>
+
+    <menuitem id="menu_item_sap_sales_org"
+              name="Sales Organization"
+              parent="menu_sap_settings"
+              sequence="3" action="action_sap_vbak_vkorg"/>
+
+    <menuitem id="menu_item_sap_rej_reason"
+              name="Reject Reason"
+              parent="menu_sap_settings"
+              sequence="4" action="action_sap_rej_reason"/>
+
+    <menuitem id="menu_item_kschl"
+              name="SAP Discount"
+              parent="menu_sap_settings"
+              sequence="4" action="action_kschl"/>
+
+    <menuitem id="menu_item_material"
+              name="SAP Material"
+              parent="menu_sap_management"
+              sequence="4" action="action_sap_material"/>
+
+
+    <menuitem id="menu_item_sap_delivery_root"
+              name="Delivery"
+              parent="menu_sap_operations"
+              sequence="4" action="action_sap_material"/>
+
+    <menuitem id="menu_item_sap_delivery"
+              name="Delivery"
+              parent="menu_item_sap_delivery_root"
+              sequence="1" action="action_sap_delivery"/>
+
+    <menuitem id="menu_item_sap_delivery_Interlocutor"
+              name="Interlocutor"
+              parent="menu_item_sap_delivery_root"
+              sequence="2" action="action_sap_delivery_interlocutor"/>
+
+    <menuitem id="menu_item_sap_delivery_position"
+              name="Position"
+              parent="menu_item_sap_delivery_root"
+              sequence="3" action="action_sap_delivery_position"/>
+
+    <menuitem id="menu_item_sap_vbak_auart"
+              name="Document Types"
+              parent="menu_sap_settings"
+              sequence="3" action="action_sap_vbak_auart"/>
+
+    <menuitem id="menu_item_sap_werk"
+              name="Delivery Plants"
+              parent="menu_sap_settings"
+              sequence="3" action="action_sap_werk"/>
+
+   <menuitem id="menu_sap_invoices_root"
+              name="Invoices"
+              parent="menu_sap_operations"
+              sequence="12"/>
+
+   <menuitem id="menu_sap_invoices"
+              name="Invoices"
+              parent="menu_sap_invoices_root"
+              action="action_sap_invoice"
+              sequence="12"/>
+   <menuitem id="menu_sap_invoices_interlocutor"
+              name="Interlocutor"
+              parent="menu_sap_invoices_root"
+              action="action_sap_invoice_interlocutor"
+              sequence="12"/>
+   <menuitem id="menu_sap_invoices_position"
+              name="Positions"
+              action="action_sap_invoice_position"
+              parent="menu_sap_invoices_root"
+              sequence="12"/>
+
+   <menuitem id="menu_sap_currency"
+              name="Currency"
+              action="action_sap_waers"
+              parent="menu_sap_settings"
+              sequence="12"/>
+
+   <menuitem id="menu_sap_Industry"
+              name="SAP Industry"
+              action="action_sap_brsch"
+              parent="menu_sap_settings"
+              sequence="15"/>
+
+   <menuitem id="menu_sap_ws_credentials"
+              name="SAP WS Credentials"
+              action="action_sap_ws_credentials"
+              parent="menu_sap_settings"
+              sequence="15"/>
+
+        <menuitem id="menu_item_sap_stock_root"
+              name="Stock"
+              parent="menu_sap_operations"
+              sequence="10"/>
+
+        <menuitem id="menu_item_sap_stock"
+              name="SAP Stock"
+              parent="menu_item_sap_stock_root"
+              sequence="1" action="action_sap_stock"/>
+
+
+
+</odoo>

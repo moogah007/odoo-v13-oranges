@@ -1,0 +1,1962 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ld_sap_integration
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-25 14:18+0000\n"
+"PO-Revision-Date: 2021-02-25 11:58-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__AUFSD
+msgid "AUFSD"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:res.groups,name:ld_sap_integration.group_sap_manager
+msgid "Administrator"
+msgstr "Administrador"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__alias
+msgid "Alias"
+msgstr "Alias"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__apikey
+msgid "Api Key"
+msgstr "Api Key"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_blanket_order__split_state__approve
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_order__split_state__approve
+msgid "Aprobado"
+msgstr "Aprobado"
+
+#. module: ld_sap_integration
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_material_view_form
+msgid "Atributos"
+msgstr "Atributos"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__BRSCH
+msgid "BRSCH"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1__BUKRS
+msgid "BUKRS"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1__BUSAB
+msgid "BUSAB"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sale_blanket_order_line
+msgid "Blanket Order Line"
+msgstr "Línea de Contrato"
+
+#. module: ld_sap_integration
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.view_order_form2
+msgid "Block State"
+msgstr "Bloquear Estado"
+
+#. module: ld_sap_integration
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.blanket_order_form2
+msgid "Block Status"
+msgstr "Bloquear estado"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__BLOCKED
+msgid "Blocked"
+msgstr "Bloqueado"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_blanket_order__split_state__block
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_order__split_state__block
+msgid "Bloqueado"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line__VTWEG
+msgid "Canal de distribucion"
+msgstr "Canal de Distribución"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_blanket_order__no_split_state__cancel
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_blanket_order__split_state__cancel
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_order__no_split_state__cancel
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_order__split_state__cancel
+msgid "Cancelado"
+msgstr "Cancelado"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_vbak_vtweg
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_channel
+msgid "Channel"
+msgstr "Canal"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock_line__COD_CENTRO
+msgid "Cod Centro"
+msgstr "Cód. Centro"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_brsch__code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_rej_reason__code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_auart__code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_spart__code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg__code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vtweg__code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_waers__code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_werk__code
+msgid "Code"
+msgstr "Código"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__value_ids
+msgid "Codigo de atributo"
+msgstr "Cód. de Atributo"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sap_vbak_auart__type__contract
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_blanket_order__no_split_state__quotation
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_order__no_split_state__quotation
+msgid "Cotizacion"
+msgstr "Presupuesto"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_res_country
+msgid "Country"
+msgstr "País"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_res_country_state
+msgid "Country state"
+msgstr "Provincia"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_kschl__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_brsch__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_interlocutor__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_interlocutor__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_rej_reason__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_interlocutor__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sinc_errors__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock_line__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_auart__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_spart__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vtweg__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_waers__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_werk__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__create_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_value_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_kschl__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_brsch__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_interlocutor__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_interlocutor__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_rej_reason__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_interlocutor__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sinc_errors__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock_line__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_auart__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_spart__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vtweg__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_waers__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_werk__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__create_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_value_line__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock__transaction_date
+msgid "Creation Date"
+msgstr "Fecha de creación"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__vbuk_cmpsf
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__vbuk_cmpsf
+msgid "Credit Block (due)"
+msgstr "Bloqueo de crédito (debido)"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__vbuk_cmgst
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__vbuk_cmgst
+msgid "Credit Block (global)"
+msgstr "Bloqueo de crédito (global)"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__vbuk_cmpsb
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__vbuk_cmpsb
+msgid "Credit Block (limit)"
+msgstr "Bloqueo de crédito (límite)"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__vbuk_cmpsg
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__vbuk_cmpsg
+msgid "Credit Block (old)"
+msgstr "Bloqueo de crédito (antigüedad)"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_res_currency
+#: model:ir.ui.menu,name:ld_sap_integration.menu_sap_currency
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order_line__root_partner_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order_line__root_partner_id
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_customers
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_kna1
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_kna1_view_tree
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_sales_interlocutor_view_tree
+msgid "Customers"
+msgstr "Clientes"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order_line__DELIVERY_ADDRESS
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order_line__DELIVERY_ADDRESS
+msgid "DELIVERY_ADDRESS"
+msgstr "Dirección de Entrega"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sinc_errors__date_mark
+msgid "Datetime of Error"
+msgstr "Error de Fecha Hora"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_werk
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__vbap_werks
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order_line__vbap_werks
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__vbap_werks
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order_line__vbap_werks
+msgid "Delivering Plant"
+msgstr "Planta de Entrega"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_delivery
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_delivery
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_delivery_root
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_delivery_view_tree
+msgid "Delivery"
+msgstr "Entrega"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_delivery_interlocutor
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_delivery_interlocutor_view_tree
+msgid "Delivery Interlocutor"
+msgstr "Interlocutor Entrega"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_stock_picking__official_nr
+msgid "Delivery Nr"
+msgstr "Nro. Entrega"
+
+#. module: ld_sap_integration
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_werk_view_tree
+msgid "Delivery Plant"
+msgstr "Planta de Entrega"
+
+#. module: ld_sap_integration
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_werk
+msgid "Delivery Plants"
+msgstr "Plantas de Entrega"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_delivery_position
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_delivery_position_view_tree
+msgid "Delivery position"
+msgstr "Posición de Entrega"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_value_line__CHARC_TXT
+msgid "Descripcion de atributo"
+msgstr "Descripción Atributo"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__DELIVERY
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_blanket_order__split_state__dispatch
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_order__split_state__dispatch
+msgid "Despachado"
+msgstr "Despachado"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__RETURN
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__RETURN
+msgid "Devolucion"
+msgstr "Devolución"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order_line__kschl
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order_line__kschl
+msgid "Disc List"
+msgstr "Desc.(%)"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_kschl
+#: model:ir.model.fields,field_description:ld_sap_integration.field_kschl__discount
+msgid "Discount"
+msgstr "Descuento"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_kschl__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_brsch__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_interlocutor__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_interlocutor__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_rej_reason__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_interlocutor__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sinc_errors__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock_line__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_auart__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_spart__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vtweg__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_waers__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_werk__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__display_name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_value_line__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_product_product__dist_channel
+#: model:ir.model.fields,field_description:ld_sap_integration.field_product_template__dist_channel
+msgid "Distribution Cannel"
+msgstr "Canal de Distribución"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__vbak_vtweg_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__vbak_vtweg_id
+msgid "Distribution Channel"
+msgstr "Canal de Distribución"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_vbak_spart
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_division
+msgid "Division"
+msgstr "División"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_vbak_auart
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_vba_auart_view_tree
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_waers_view_tree
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#. module: ld_sap_integration
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_vbak_auart
+msgid "Document Types"
+msgstr "Tipos de Documento"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__ec_dest_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__ec_dest_id
+msgid "Economic Destiny"
+msgstr "Destino Económico"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__endpoint_pedidos
+msgid "EndPoint Pedidos"
+msgstr "EndPoint Pedidos"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__endpoint_token
+msgid "EndPoint Token"
+msgstr "EndPoint Token"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_blanket_order__no_split_state__sent
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_blanket_order__state__sent_to_sap
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_order__no_split_state__sent
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_order__state__sent_to_sap
+msgid "Enviado a SAP"
+msgstr "Enviado a SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_blanket_order__no_split_state__sent_failed
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_blanket_order__state__sent_failed
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_order__no_split_state__sent_failed
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_order__state__sent_failed
+msgid "Envio Fallido"
+msgstr "Envío Fallido"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sinc_errors__error_str
+msgid "Error String"
+msgstr "Línea de Error"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line__product_id
+msgid "Family Product"
+msgstr "Familia de Producto"
+
+#. module: ld_sap_integration
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_ws_Credentials_view_form
+msgid "Get Token"
+msgstr "Obtener Token"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_kschl__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_brsch__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_interlocutor__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_interlocutor__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_rej_reason__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_interlocutor__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sinc_errors__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sinc_errors__id_model
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock_line__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_auart__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_spart__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vtweg__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_waers__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_werk__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_value_line__id
+msgid "ID"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1__INTAD
+msgid "INTAD"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__sap_delivery_interlocutor_ids
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_delivery_Interlocutor
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_sales_interlocutor
+#: model:ir.ui.menu,name:ld_sap_integration.menu_sap_invoices_interlocutor
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_delivery_view_form
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_invoice_view_form
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_sales_view_form
+msgid "Interlocutor"
+msgstr "Interlocutor"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_inter_functions
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__sap_knvp_ids
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_knvp
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_knvp_view_tree
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_knvv_view_form
+msgid "Interlocutor Functions"
+msgstr "Funciones Interlocutor"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__sap_invoice_interlocutor_ids
+msgid "Interlocutors"
+msgstr "Interlocutores"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_invoice
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_invoice_view_tree
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_invoice_interlocutor
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_invoice_interlocutor_view_tree
+msgid "Invoice Interlocutor"
+msgstr "Interlocutor de Factura"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__note_inv
+#: model:ir.model.fields,help:ld_sap_integration.field_sale_order__note_inv
+msgid "Invoice Notes"
+msgstr "Notas de Factura"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_invoice_position
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_invoice_position_view_tree
+msgid "Invoice position"
+msgstr "Posición de Factura"
+
+#. module: ld_sap_integration
+#: model:ir.ui.menu,name:ld_sap_integration.menu_sap_invoices
+#: model:ir.ui.menu,name:ld_sap_integration.menu_sap_invoices_root
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__JEST_STAT
+msgid "JEST_STAT"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__PRDHA
+msgid "Jerarquia"
+msgstr "Jerarquía"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__KONV_KBETR
+msgid "KONV_KBETR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_product_product__KONV_WAERS
+#: model:ir.model.fields,field_description:ld_sap_integration.field_product_template__KONV_WAERS
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order_line__KONV_WAERS
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order_line__KONV_WAERS
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__KONV_WAERS
+msgid "KONV_WAERS"
+msgstr "Moneda"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__KUNN2
+msgid "KUNN2"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__KUNNR
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1__KUNNR
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__KUNNR
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__KUNNR
+msgid "KUNNR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__KURST
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__KURST
+msgid "KURST"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__LAND1
+msgid "LAND1"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__LIKP_UPDKZ
+msgid "LIKP_UPDKZ"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__LIKP_VBELN
+msgid "LIKP_VBELN"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__LIKP_WADAT_IST
+msgid "LIKP_WADAT_IST"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__LIKP_XBLNR
+msgid "LIKP_XBLNR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__LIPS_MATNR
+msgid "LIPS_MATNR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__LIPS_POSNR
+msgid "LIPS_POSNR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__LIPS_UPDKZ
+msgid "LIPS_UPDKZ"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__LIPS_VGBEL
+msgid "LIPS_VGBEL"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__LIPS_VGPOS
+msgid "LIPS_VGPOS"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__LIPS_VRKME
+msgid "LIPS_VRKME"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__LIPS_WERKS
+msgid "LIPS_WERKS"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__LIPS_LFIMG
+msgid "LIP_LFIMG"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_kschl____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_brsch____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_interlocutor____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_interlocutor____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_rej_reason____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_interlocutor____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sinc_errors____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock_line____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_auart____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_spart____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vtweg____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_waers____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_werk____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials____last_update
+#: model:ir.model.fields,field_description:ld_sap_integration.field_value_line____last_update
+msgid "Last Modified on"
+msgstr "Última modificación"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_kschl__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_brsch__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_interlocutor__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_interlocutor__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_rej_reason__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_interlocutor__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sinc_errors__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock_line__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_auart__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_spart__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vtweg__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_waers__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_werk__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__write_uid
+#: model:ir.model.fields,field_description:ld_sap_integration.field_value_line__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_kschl__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_brsch__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_interlocutor__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_interlocutor__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_rej_reason__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_interlocutor__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sinc_errors__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock_line__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_auart__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_spart__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vtweg__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_waers__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_werk__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__write_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_value_line__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock__sap_stock_line_ids
+msgid "Lines"
+msgstr "Líneas"
+
+#. module: ld_sap_integration
+#: model:ir.ui.menu,name:ld_sap_integration.menu_sap_management
+msgid "Maestros"
+msgstr "Maestros"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order_line__manual_price
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order_line__manual_price
+msgid "Manual Price"
+msgstr "Precio manual"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_material
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_material_view_form
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_material_view_tree
+msgid "Material"
+msgstr "Material"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__material_line_ids
+msgid "Material Lines"
+msgstr "Líneas de Material"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__sap_message_recieved
+msgid "Message Received"
+msgstr "Mensaje Recibido"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__sap_message_sent
+msgid "Message Sent"
+msgstr "Mensaje Enviado"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sinc_errors__model_name
+msgid "Model Name"
+msgstr "Nombre del Modelo"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__NAME1
+msgid "NAME1"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__NETWR_MWSBP
+msgid "NETWR_MWSBP"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg__no_attribs
+msgid "NO WEB Attributes"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_kschl__name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_brsch__name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_rej_reason__name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_auart__name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_spart__name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg__name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vtweg__name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_waers__name
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_werk__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sap_delivery__DELIVERY__n
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sap_delivery__RETURN__n
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sap_invoice__RETURN__n
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sap_sales__BLOCKED__n
+msgid "No"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock_line__NRO_MATERIAL_SAP
+msgid "Nro Material SAP"
+msgstr "Nro. Material SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__MATNR
+msgid "Número de material"
+msgstr "Número de Material"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__ORT01
+msgid "ORT01"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__note_obs
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__note_obs
+#: model:ir.model.fields,help:ld_sap_integration.field_sale_blanket_order__note_obs
+#: model:ir.model.fields,help:ld_sap_integration.field_sale_order__note_obs
+msgid "Observaciones"
+msgstr "Observaciones"
+
+#. module: ld_sap_integration
+#: model:ir.ui.menu,name:ld_sap_integration.menu_sap_operations
+msgid "Operations"
+msgstr "Operaciones"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_blanket_order__no_split_state__sale
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sale_order__no_split_state__sale
+msgid "Orden de Venta"
+msgstr "Pedido"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line__VKORG
+msgid "Organizacion de ventas"
+msgstr "Organización de Ventas"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__PARVW
+msgid "PARVW"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__PSTLZ
+msgid "PSTLZ"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__partner_id
+msgid "Parrtner"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__passwd
+msgid "Password"
+msgstr "Contraseña"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_account_payment_term
+msgid "Payment Terms"
+msgstr "Plazos de pago"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_delivery_carrier__pickup
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__pickup
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__pickup
+msgid "Pickup"
+msgstr "Retiro por Planta"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__sap_delivery_position_ids
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_delivery_position
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_sales_position
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_delivery_view_form
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_invoice_view_form
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_sales_view_form
+msgid "Position"
+msgstr "Posición"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__sap_invoice_position_ids
+#: model:ir.ui.menu,name:ld_sap_integration.menu_sap_invoices_position
+msgid "Positions"
+msgstr "Posiciones"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__JEST_STAT
+msgid "Price Block"
+msgstr "Bloqueo de precio"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__process_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__process_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__process_date
+msgid "Process Date"
+msgstr "Fecha Proceso"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_product_attribute
+msgid "Product Attribute"
+msgstr "Atributo de Producto"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_product_category
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_spart__category_id
+msgid "Product Category"
+msgstr "Categoría de Producto"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de Producto"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_uom_uom
+msgid "Product Unit of Measure"
+msgstr "Unidades de Medida del Producto"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__REGIO
+msgid "REGIO"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__RETURN
+msgid "RETURN"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_rej_reason
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_rej_reason
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.kschl_view_tree
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_rej_reason_view_tree
+msgid "Reject Reason"
+msgstr "Motivo de rechazo"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__sap_result
+msgid "Result"
+msgstr "Resultado"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_vbak_vtweg
+msgid "SAP Channel"
+msgstr "Canal de SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_account_payment_term__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_product_attribute__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_product_category__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_product_product__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_product_public_category__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_product_template__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_res_country__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_res_country_state__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_res_currency__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_res_partner__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_res_users__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order_line__prod_sap_code
+#: model:ir.model.fields,field_description:ld_sap_integration.field_uom_uom__sap_code
+msgid "SAP Code"
+msgstr "Código de SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__sap_code
+msgid "SAP Code Order"
+msgstr "Cód. Orden SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_waers
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_waers
+msgid "SAP Currency"
+msgstr "Moneda de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_customers
+msgid "SAP Customers"
+msgstr "Clientes de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_werk
+msgid "SAP Delivering Plant"
+msgstr "Planta de Entrega de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_delivery
+msgid "SAP Delivery"
+msgstr "Entrega de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_delivery_interlocutor
+msgid "SAP Delivery Interlocutor"
+msgstr "Interlocutor Entrega SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_delivery_position
+msgid "SAP Delivery position"
+msgstr "Posición Entrega SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_kschl
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_kschl
+msgid "SAP Discount"
+msgstr "Descuento de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_vbak_spart
+msgid "SAP Division"
+msgstr "División SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__sap_document_type_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__sap_document_type_id
+msgid "SAP Document Type"
+msgstr "Tipo de documento de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_vbak_auart
+msgid "SAP Document Types"
+msgstr "Tipos de Documento de SAP"
+
+#. module: ld_sap_integration
+#: model:ir.module.category,description:ld_sap_integration.module_category_ld_sap_integration_admin
+#: model:ir.module.category,name:ld_sap_integration.module_category_ld_sap_integration_admin
+msgid "SAP INT ADMIN"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.module.category,description:ld_sap_integration.module_category_ld_sap_integration_user
+#: model:ir.module.category,name:ld_sap_integration.module_category_ld_sap_integration_user
+msgid "SAP INT USER"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:res.groups,name:ld_sap_integration.ld_sap_integration_admin_group
+msgid "SAP INTEGRATION ADMIN"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:res.groups,name:ld_sap_integration.ld_sap_integration_user_group
+msgid "SAP INTEGRATION USER"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_brsch
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_brsch
+#: model:ir.ui.menu,name:ld_sap_integration.menu_sap_Industry
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_brsch_view_tree
+msgid "SAP Industry"
+msgstr "Industria SAP"
+
+#. module: ld_sap_integration
+#: model:ir.ui.menu,name:ld_sap_integration.menu_sap_root
+msgid "SAP Integration"
+msgstr "Integración SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_inter_functions
+msgid "SAP Interlocutor Funtions"
+msgstr "Funciones Interlocutor SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_invoice
+msgid "SAP Invoice"
+msgstr "Factura de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_invoice_interlocutor
+msgid "SAP Invoice Interlocutor"
+msgstr "Interlocutor Factura SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_invoice_position
+msgid "SAP Invoice position"
+msgstr "Posición Factura SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_material
+#: model:ir.model.fields,field_description:ld_sap_integration.field_product_product__sap_material_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_product_template__sap_material_id
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_material
+msgid "SAP Material"
+msgstr "Material de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_vbak_vkorg
+msgid "SAP Organization"
+msgstr "Organización de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_sales_position_view_tree
+msgid "SAP Positions"
+msgstr "Posiciones de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_rej_reason
+msgid "SAP Reject Reason"
+msgstr "Motivo de rechazo de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.view_order_form2
+msgid "SAP Response"
+msgstr "Respuesta de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_sales
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_sales
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_sales_view_tree
+msgid "SAP Sales"
+msgstr "Ventas de SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_sales_area
+msgid "SAP Sales Area"
+msgstr "Area Ventas SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_sales_interlocutor
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_sales_interlocutor
+msgid "SAP Sales Interlocutor"
+msgstr "Interlocutor Ventas SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_sales_position
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_sales_position
+msgid "SAP Sales Positions"
+msgstr "Posiciones Ventas SAP"
+
+#. module: ld_sap_integration
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_errors
+msgid "SAP Sinc Errors"
+msgstr "Errores Sincronización SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_society
+msgid "SAP Society"
+msgstr "Sociedad SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_stock
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_stock
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_stock
+msgid "SAP Stock"
+msgstr "Stock SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_sinc_errors
+msgid "SAP Sync Erorrs"
+msgstr "Errores Sincronización SAP"
+
+#. module: ld_sap_integration
+#: model_terms:ir.actions.act_window,help:ld_sap_integration.action_sap_ws_credentials
+#: model:ir.ui.menu,name:ld_sap_integration.menu_sap_ws_credentials
+msgid "SAP WS Credentials"
+msgstr "Credenciales WS SAP"
+
+#. module: ld_sap_integration
+#: model:ir.actions.server,name:ld_sap_integration.create_new_invoice_ir_actions_server
+#: model:ir.cron,cron_name:ld_sap_integration.create_new_invoice
+#: model:ir.cron,name:ld_sap_integration.create_new_invoice
+msgid "SAP: Create Invoices"
+msgstr "SAP: Crear Facturas"
+
+#. module: ld_sap_integration
+#: model:ir.actions.server,name:ld_sap_integration.cust2partner_job_ir_actions_server
+#: model:ir.cron,cron_name:ld_sap_integration.cust2partner_job
+#: model:ir.cron,name:ld_sap_integration.cust2partner_job
+msgid "SAP: Customer to Partner"
+msgstr "SAP: Cliente a Empresa"
+
+#. module: ld_sap_integration
+#: model:ir.actions.server,name:ld_sap_integration.create_new_picking_ir_actions_server
+#: model:ir.cron,cron_name:ld_sap_integration.create_new_picking
+#: model:ir.cron,name:ld_sap_integration.create_new_picking
+msgid "SAP: Delivery to Pickings"
+msgstr "SAP: Entrega a Recolección"
+
+#. module: ld_sap_integration
+#: model:ir.actions.server,name:ld_sap_integration.create_new_product_ir_actions_server
+#: model:ir.cron,cron_name:ld_sap_integration.create_new_product
+#: model:ir.cron,name:ld_sap_integration.create_new_product
+msgid "SAP: Materials to Products"
+msgstr "SAP: Materiales a Productos"
+
+#. module: ld_sap_integration
+#: model:ir.actions.server,name:ld_sap_integration.create_new_sales_ir_actions_server
+#: model:ir.cron,cron_name:ld_sap_integration.create_new_sales
+#: model:ir.cron,name:ld_sap_integration.create_new_sales
+msgid "SAP: sales to Orders "
+msgstr "SAP: Ventas a Pedidos"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__SPART
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__SPART
+msgid "SPART"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__STCD1
+msgid "STCD1"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__STCDT
+msgid "STCDT"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__STRAS
+msgid "STRAS"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sap_vbak_auart__type__sale
+msgid "Sale"
+msgstr "Venta"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sale_order
+msgid "Sale Order"
+msgstr "Pedido"
+
+#. module: ld_sap_integration
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_sales
+msgid "Sales"
+msgstr "Ventas"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_sales_area
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__sap_knvv_ids
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_knvv
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_kna1_view_form
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_knvv_view_tree
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_vbak_spart_view_tree
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_vbak_vkorg_view_tree
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_vbak_vtweg_view_tree
+msgid "Sales Area"
+msgstr "Área de Ventas"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sale_blanket_order
+msgid "Sales Blanket Order"
+msgstr "VOLVER"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de Pedido de Ventas"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__vbak_vkorg_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__vbak_vkorg_id
+msgid "Sales Organizacion"
+msgstr "Organización de Ventas"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_vbak_vkorg
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_sales_org
+msgid "Sales Organization"
+msgstr "Organización de Ventas"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_interlocutor__sap_delivery_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__sap_delivery_id
+msgid "Sap Delivery"
+msgstr "Entrega SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_interlocutor__sap_invoice_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__sap_invoice_id
+msgid "Sap Invoice"
+msgstr "Factura SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knb1__sap_kna1_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__sap_kna1_id
+msgid "Sap Kna1"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__sap_knvv_id
+msgid "Sap Knvv"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line__sap_material_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_value_line__sap_material_id
+msgid "Sap Material"
+msgstr "Material SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_interlocutor__sap_sales_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__sap_sales_id
+msgid "Sap Sales"
+msgstr "Ventas SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__sap_sales_interlocutor_ids
+msgid "Sap Sales Interlocutor"
+msgstr "Interlocutor Ventas SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__sap_sales_position_ids
+msgid "Sap Sales Position"
+msgstr "Posición Ventas SAP"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_sinc_errors
+msgid "Sap Sinc Errors"
+msgstr "Errores Sinc. SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock_line__sap_stock_id
+msgid "Sap Stock"
+msgstr "Stock SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__vbak_spart_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__vbak_spart_id
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__SPART
+msgid "Sector"
+msgstr "Sector"
+
+#. module: ld_sap_integration
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.view_order_form2
+msgid "Send To SAP"
+msgstr "Enviar a SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_vkorg__direct_to_sap
+msgid "Send to sap automatically"
+msgstr "Enviar a SAP automáticamente"
+
+#. module: ld_sap_integration
+#: model:ir.ui.menu,name:ld_sap_integration.menu_sap_settings
+msgid "Setings"
+msgstr "Configuración"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Métodos de envío"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sap_delivery__DELIVERY__s
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sap_delivery__RETURN__s
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sap_invoice__RETURN__s
+#: model:ir.model.fields.selection,name:ld_sap_integration.selection__sap_sales__BLOCKED__s
+msgid "Si"
+msgstr "Si"
+
+#. module: ld_sap_integration
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.total
+msgid "Simulation"
+msgstr "Simulación"
+
+#. module: ld_sap_integration
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_sinc_errors_view_tree
+msgid "Sinc Errors"
+msgstr "Errores Sinc."
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery__sinced
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__sinced
+msgid "Sinced"
+msgstr "Sincronizado"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__sincedf
+msgid "Sincronized"
+msgstr "Sincronizados"
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_society
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__sap_knb1_ids
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_knb1
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_kna1_view_form
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_knb1_view_tree
+msgid "Society"
+msgstr "Sociedad"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__start_date
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__start_date
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__state
+msgid "State"
+msgstr "Estado"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__no_split_state
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_blanket_order__split_state
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__no_split_state
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__split_state
+msgid "States"
+msgstr "Estados"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: ld_sap_integration
+#: model:ir.ui.menu,name:ld_sap_integration.menu_item_sap_stock_root
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_stock_view_tree
+msgid "Stock"
+msgstr "Stock"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__TELF1
+msgid "TELF1"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__TELF2
+msgid "TELF2"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_stock_line__STOCK_LIBRE_UTILIZACION
+msgid "Texto Libre"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__MAKTX
+msgid "Texto breve de material"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__token
+msgid "Token"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_vbak_auart__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material_line__VRKME
+msgid "Unidad de medida de venta"
+msgstr "Unidad Medida de Venta"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__user
+#: model:res.groups,name:ld_sap_integration.group_sap_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sale_order_line__UTILIZACION
+msgid "Utilizacion"
+msgstr "Utilización"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBAK_ANGDT
+msgid "VBAK_ANGDT"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBAK_AUART
+msgid "VBAK_AUART"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBAK_BNDDT
+msgid "VBAK_BNDDT"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBAK_SPART
+msgid "VBAK_SPART"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBAK_UPDKZ
+msgid "VBAK_UPDKZ"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBAK_VBELN
+msgid "VBAK_VBELN"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBAK_VTWEG
+msgid "VBAK_VTWEG"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBAK_ZTERM
+msgid "VBAK_ZTERM"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__VBAP_KWMENG
+msgid "VBAP_KWMENG"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__VBAP_MATNR
+msgid "VBAP_MATNR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__VBAP_POSNR
+msgid "VBAP_POSNR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__VBAP_UPDKZ
+msgid "VBAP_UPDKZ"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__VBAP_VGBEL
+msgid "VBAP_VGBEL"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__VBAP_VGPOS
+msgid "VBAP_VGPOS"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__VBAP_VRKME
+msgid "VBAP_VRKME"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__VBAP_WERKS
+msgid "VBAP_WERKS"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__VBEP_EDATU
+msgid "VBEP_EDATU"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_position__VBKD_BSTKD
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBKD_BSTKD
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__VBKD_BSTKD
+msgid "VBKD_BSTKD"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBKD_BSTKD_OC
+msgid "VBKD_BSTKD_OC"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_interlocutor__VBPA_KUNNR
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_interlocutor__VBPA_KUNNR
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_interlocutor__VBPA_KUNNR
+msgid "VBPA_KUNNR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_interlocutor__VBPA_PARVW
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_interlocutor__VBPA_PARVW
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_interlocutor__VBPA_PARVW
+msgid "VBPA_PARVW"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_delivery_interlocutor__VBPA_PERNR
+msgid "VBPA_PERNR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__VBRK_FKDAT
+msgid "VBRK_FKDAT"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__VBRK_VBELN
+msgid "VBRK_VBELN"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBRK_WAERK
+msgid "VBRK_WAERK"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__VBRK_XBLNR
+msgid "VBRK_XBLNR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBRP_AUBEL
+msgid "VBRP_AUBEL"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBRP_AUPOS
+msgid "VBRP_AUPOS"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBRP_FKIMG
+msgid "VBRP_FKIMG"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBRP_MATNR
+msgid "VBRP_MATNR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBRP_MWSBP
+msgid "VBRP_MWSBP"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBRP_NETWR
+msgid "VBRP_NETWR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBRP_POSNR
+msgid "VBRP_POSNR"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBRP_VGBEL
+msgid "VBRP_VGBEL"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBRP_VGPOS
+msgid "VBRP_VGPOS"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice_position__VBRP_VRKME
+msgid "VBRP_VRKME"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBUK_CMGST
+msgid "VBUK_CMGST"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBUK_CMPSB
+msgid "VBUK_CMPSB"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBUK_CMPSF
+msgid "VBUK_CMPSF"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBUK_CMPSG
+msgid "VBUK_CMPSG"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__VKORG
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__VKORG
+msgid "VKORG"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvp__VTWEG
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__VTWEG
+msgid "VTWEG"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__date_from
+msgid "Validate From"
+msgstr "Válido Desde"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_ws_credentials__date_to
+msgid "Validate To"
+msgstr "Válido Hasta"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_value_line__VALUE
+msgid "Value"
+msgstr "Valor"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_value_line__VALUE_TO
+msgid "Value To"
+msgstr "Valor A"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales__VBAK_VKORG
+msgid "Vbak Vkorg"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_sales_position__VBAP_ABGRU
+msgid "Vbap Abgru"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__WAERS
+msgid "WAERS"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.actions.act_window,name:ld_sap_integration.action_sap_ws_credentials
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_ws_credentials_view_tree
+msgid "WS Credentials"
+msgstr "Credenciales WS"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_product_public_category
+msgid "Website Product Category"
+msgstr "Categoría del Producto"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_knvv__ZTERM
+msgid "ZTERM"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_kschl
+msgid "kschl"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:res.groups,comment:ld_sap_integration.ld_sap_integration_admin_group
+msgid "ld sap integration ADMIN"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:res.groups,comment:ld_sap_integration.ld_sap_integration_user_group
+msgid "ld sap integration USER"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_kna1__cust2partnerf
+msgid "processed"
+msgstr "procesado"
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_stock_picking__sap_code
+msgid "sap code"
+msgstr "código SAP"
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_brsch
+msgid "sap.brsch"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_delivery
+msgid "sap.delivery"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_delivery_interlocutor
+msgid "sap.delivery.interlocutor"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_delivery_position
+msgid "sap.delivery.position"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_invoice
+msgid "sap.invoice"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_invoice_interlocutor
+msgid "sap.invoice.interlocutor"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_invoice_position
+msgid "sap.invoice.position"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_kna1
+msgid "sap.kna1"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_knb1
+msgid "sap.knb1 Society"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_knvp
+msgid "sap.knvp"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_knvv
+msgid "sap.knvv Sales Area"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_material
+msgid "sap.material"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_material_line
+msgid "sap.material.line"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_rej_reason
+msgid "sap.rej.reason"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_sales
+msgid "sap.sales"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_sales_interlocutor
+msgid "sap.sales.interlocutor"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_sales_position
+msgid "sap.sales.position"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_sinc_errors
+msgid "sap.sinc.errors"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_stock
+msgid "sap.stock"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_stock_line
+msgid "sap.stock.line"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_vbak_auart
+msgid "sap.vbak.auart"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_vbak_spart
+msgid "sap.vbak.spart"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_vbak_vkorg
+msgid "sap.vbak.vkorg"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_vbak_vtweg
+msgid "sap.vbak.vtweg"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_waers
+msgid "sap.waers"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_werk
+msgid "sap.werk"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_sap_ws_credentials
+msgid "sap.ws.credentials"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_invoice__sinced
+#: model:ir.model.fields,field_description:ld_sap_integration.field_sap_material__sinced
+msgid "sinced"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model_terms:ir.ui.view,arch_db:ld_sap_integration.sap_stock_view_form
+msgid "stock"
+msgstr ""
+
+#. module: ld_sap_integration
+#: model:ir.model,name:ld_sap_integration.model_value_line
+msgid "value.line"
+msgstr ""

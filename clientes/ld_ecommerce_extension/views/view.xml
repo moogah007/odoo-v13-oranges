@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--template id="payment_ld" inherit_id="website_sale.payment">
+        <xpath expr="//div[@id='payment_method']" position="after">
+            <div class="js_payment mt-3" id="payment_method2">
+                <form target="_self" action="/shop/payment2" method="post" class="float-right">
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                    <a role="button" class="btn btn-primary a-submit" href="#">
+                        <span>Simulation<span class="fa fa-chevron-right"></span></span>
+                    </a>
+                </form>
+            </div>
+        </xpath>
+    </template-->
+
+    <template id="portal_my_home_sale2" inherit_id="sale.portal_my_home_sale">
+        <xpath expr="//t[@t-if='quotation_count']" position="replace">
+        </xpath>
+        <xpath expr="//t[@t-if='order_count']" position="replace">
+            <t t-if="sap_code=='1010'">
+                <t t-if="orders_vig_count_azu" t-call="portal.portal_docs_entry">
+                    <t t-set="title">Pedidos Vigentes</t>
+                    <t t-set="url" t-value="'/my/orders_vig_azu'"/>
+                    <t t-set="count" t-value="orders_vig_count_azu"/>
+                </t>
+                <t t-if="orders_hist_count_azu" t-call="portal.portal_docs_entry">
+                    <t t-set="title">Pedidos Historicos</t>
+                    <t t-set="url" t-value="'/my/orders_hist_azu'"/>
+                    <t t-set="count" t-value="orders_hist_count_azu"/>
+                </t>
+                <t t-if="orders_orig_count_azu" t-call="portal.portal_docs_entry">
+                    <t t-set="title">Pedidos Originales</t>
+                    <t t-set="url" t-value="'/my/orders_orig_azu'"/>
+                    <t t-set="count" t-value="orders_orig_count_azu"/>
+                </t>
+            </t>
+            <t t-if="sap_code in ('1020','4110')">
+                <t t-if="orders_vig_count" t-call="portal.portal_docs_entry">
+                    <t t-set="title">Pedidos Vigentes</t>
+                    <t t-set="url" t-value="'/my/orders_vig'"/>
+                    <t t-set="count" t-value="orders_vig_count"/>
+                </t>
+                <t t-if="orders_hist_count" t-call="portal.portal_docs_entry">
+                    <t t-set="title">Pedidos Historicos</t>
+                    <t t-set="url" t-value="'/my/orders_hist'"/>
+                    <t t-set="count" t-value="orders_hist_count"/>
+                </t>
+                <t t-if="orders_orig_count" t-call="portal.portal_docs_entry">
+                    <t t-set="title">Pedidos Originales</t>
+                    <t t-set="url" t-value="'/my/orders_orig'"/>
+                    <t t-set="count" t-value="orders_orig_count"/>
+                </t>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="portal_my_home_invoice2" inherit_id="account.portal_my_home_invoice">
+        <xpath expr="//t[@t-if='invoice_count']" position="replace">
+        </xpath>
+    </template>
+
+    <template id="portal_my_quotations2" name="My Quotations">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Quotations</t>
+            </t>
+            <t t-if="not quotations">
+                <p>There are currently no quotations for your account.</p>
+            </t>
+            <t t-if="quotations" t-call="portal.portal_table">
+                <thead>
+                    <tr class="active">
+                        <th>Quotation #</th>
+                        <t t-if="sap_code=='1010'">
+                            <th class="text-right">Vigencia Desde</th>
+                            <th class="text-right">Vigencia Hasta</th>
+                        </t>
+                        <th class="text-right">Nro Doc SAP</th>
+                        <th class="text-right">Nro de OC</th>
+                        <th class="text-right">Sector</th>
+                        <th class="text-right">Destino Mercaderia</th>
+                        <th class="text-center">Estado</th>
+                        <th class="text-right">Total</th>
+                        <th class="text-center">Order Report</th>
+                        <th class="text-center">Linked Report</th>
+                    </tr>
+                </thead>
+                <t t-set="model_short_name" t-value="'so' if quotations._name == 'sale.order' else 'sbo'"/>
+                <t t-foreach="quotations" t-as="quotation">
+                    <tr>
+                        <td class="text-right"><span t-field="quotation.VBKD_BSTKD.name"/></td>
+                        <t t-if="sap_code=='1010'">
+                            <td class="text-right"><span t-field="quotation.start_date"/></td>
+                            <td class="text-right"><span t-field="quotation.validity_date"/></td>
+                        </t>
+                        <td><a t-att-href="quotation.get_portal_url()"><t t-esc="quotation.sap_code"/></a></td>
+                        <td class="text-right"><span t-field="quotation.client_order_ref"/></td>
+                        <td class="text-right"><span t-field="quotation.vbak_spart_id.name"/></td>
+                        <td class="text-right"><span t-field="quotation.partner_shipping_id.name"/></td>
+                        <td class="text-center"><span t-field="quotation.split_state"/></td>
+                        <td class="text-right"><span t-field="quotation.amount_total"/></td>
+                        <td class="text-center">
+                            <a class="btn btn-info" t-attf-href="/my/orders/#{model_short_name}/#{quotation.id}">Report</a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-info" t-attf-href="/my/orders/l#{model_short_name}/#{quotation.id}">Report</a>
+                        </td>
+                    </tr>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <template id="portal_my_quotations3" name="My Quotations">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Quotations</t>
+            </t>
+            <t t-if="not quotations">
+                <p>There are currently no quotations for your account.</p>
+            </t>
+            <t t-if="quotations" t-call="portal.portal_table">
+                <thead>
+                    <tr class="active">
+                        <th>Quotation #</th>
+                        <th class="text-right">Nro de OC</th>
+                        <th class="text-right">Destino Mercaderia</th>
+                        <th class="text-center">Estado</th>
+                        <th class="text-right">Total</th>
+                        <!--th class="text-center">Order Report</th>
+                        <th class="text-center">Linked Report</th-->
+                    </tr>
+                </thead>
+                <t t-foreach="quotations" t-as="quotation">
+                    <tr>
+                        <td><a t-att-href="quotation.get_portal_url()"><t t-esc="quotation.name"/></a></td>
+                        <td class="text-right"><span t-field="quotation.client_order_ref"/></td>
+                        <td class="text-right"><span t-field="quotation.partner_shipping_id.name"/></td>
+                        <td class="text-center">
+                            <span t-field="quotation.split_state"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="quotation.amount_total"/>
+                        </td>
+                        <!--td class="text-center">
+                            <a class="btn btn-info" t-attf-href="/my/orders/so/#{quotation.id}">Report</a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-info" t-attf-href="/my/orders/lso/#{quotation.id}">Report</a>
+                        </td-->
+                    </tr>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>
