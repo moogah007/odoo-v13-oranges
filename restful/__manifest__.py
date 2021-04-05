@@ -1,6 +1,6 @@
 {
     "name": "Odoo RESTFUL API",
-    "version": "13.0.2.0.2",
+    "version": "1.0.1",
     "category": "API",
     "author": "Babatope Ajepe",
     "website": "https://ajepe.github.io/blog/restful-api-for-odoo",

@@ -12,7 +12,6 @@ from odoo.addons.restful.common import (
     valid_response,
 )
 from odoo.http import request
-from odoo import fields
 
 _logger = logging.getLogger(__name__)
 
@@ -60,6 +59,7 @@ class APIController(http.Controller):
                 data = request.env[model.model].search_read(
                     domain=domain, fields=fields, offset=offset, limit=limit, order=order,
                 )
+                print(data)
                 if id:
                     domain = [("id", "=", int(id))]
                     data = request.env[model.model].search_read(
@@ -75,25 +75,6 @@ class APIController(http.Controller):
         except AccessError as e:
 
             return invalid_response("Access error", "Error: %s" % e.name)
-
-    def reformat(self, values, model):
-        vals2 = values.copy()
-        n_vals = dict()
-        rlist = list()
-        for vals in vals2:
-            n_vals = dict()
-            for k, v in vals.items():
-                name = k
-                field = request.env['ir.model.fields'].search([
-                    ('model', '=', model._name), ('name', '=', name)])
-                field_type = field.ttype
-                if field_type in ('one2many', 'many2many'):
-                    n_vals[name] = self.reformat(v, request.env[model._fields[name].comodel_name])
-                else:
-                    n_vals[name] = v
-            rlist.append((0,0,n_vals))
-        return rlist
-
 
     @validate_token
     @http.route(_routes, type="http", auth="none", methods=["POST"], csrf=False)
@@ -136,20 +117,12 @@ class APIController(http.Controller):
             try:
                 # changing IDs from string to int.
                 for k, v in payload.items():
+
                     if "__api__" in k:
-                        name = k[7:]
-                    elif "restapi__" in k:
-                        name = k[9:]
+                        values[k[7:]] = ast.literal_eval(v)
                     else:
-                        name = k
-                    field = request.env['ir.model.fields'].search([
-                        ('model', '=', request.env[model.model]._name), ('name', '=', name)])
-                    field_type = field.ttype
-                    if field_type in ('one2many', 'many2many'):
-                        values[name] = self.reformat(v, request.env[request.env[model.model]._fields[name].comodel_name])
-                    else:
-                        values[name] = v
-                _logger.info(values)
+                        values[k] = v
+
                 resource = request.env[model.model].create(values)
             except Exception as e:
                 request.env.cr.rollback()
@@ -168,11 +141,7 @@ class APIController(http.Controller):
         """."""
         payload = payload.get('payload', {})
         try:
-            if 'domain' in payload.keys():
-                _id = request.env[model].search(payload['domain']).id
-                payload.pop('domain', None)
-            else:
-                _id = int(id)
+            _id = int(id)
         except Exception as e:
             return invalid_response("invalid object id", "invalid literal %s for id with base " % id)
         _model = request.env[self._model].sudo().search([("model", "=", model)], limit=1)
@@ -185,7 +154,7 @@ class APIController(http.Controller):
             record.write(payload)
         except Exception as e:
             request.env.cr.rollback()
-            return invalid_response("exception", e)
+            return invalid_response("exception", e.name)
         else:
             return valid_response(record.read())
 
